@@ -34,184 +34,96 @@ public class Tela03 extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jb_logocmn = new javax.swing.JLabel();
         jl_fundoamarelo = new javax.swing.JLabel();
-        jl_usuario = new javax.swing.JLabel();
-        jl_cliente = new javax.swing.JLabel();
-        jl_revista = new javax.swing.JLabel();
-        jl_midia = new javax.swing.JLabel();
         jl_titulo = new javax.swing.JLabel();
+        jb_salvar = new javax.swing.JButton();
         jb_sair = new javax.swing.JButton();
-        jb_sair1 = new javax.swing.JButton();
-        jb_sair2 = new javax.swing.JButton();
-        jb_sair3 = new javax.swing.JButton();
-        jb_sair4 = new javax.swing.JButton();
+        jb_novo = new javax.swing.JButton();
+        jb_editar = new javax.swing.JButton();
+        jb_deletar = new javax.swing.JButton();
 
         setAutoRequestFocus(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jl_logoflip.setForeground(new java.awt.Color(249, 171, 24));
         jl_logoflip.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-revisteiro.png"))); // NOI18N
+        getContentPane().add(jl_logoflip, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
         jl_subtitulo.setBackground(new java.awt.Color(204, 204, 204));
         jl_subtitulo.setFont(new java.awt.Font("Myriad Pro", 1, 30)); // NOI18N
         jl_subtitulo.setForeground(new java.awt.Color(204, 204, 204));
         jl_subtitulo.setText("cadastro de cliente");
         jl_subtitulo.setPreferredSize(new java.awt.Dimension(100, 50));
+        getContentPane().add(jl_subtitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 125, 410, 50));
 
         jSeparator1.setBackground(new java.awt.Color(204, 204, 204));
         jSeparator1.setForeground(new java.awt.Color(204, 204, 204));
+        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 101, 630, 10));
 
         jb_logocmn.setForeground(new java.awt.Color(249, 171, 24));
         jb_logocmn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-cmn.png"))); // NOI18N
+        getContentPane().add(jb_logocmn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 622, -1, 50));
 
         jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
         jl_fundoamarelo.setOpaque(true);
-
-        jl_usuario.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
-        jl_usuario.setForeground(new java.awt.Color(153, 153, 153));
-        jl_usuario.setText("Usuário");
-
-        jl_cliente.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
-        jl_cliente.setForeground(new java.awt.Color(153, 153, 153));
-        jl_cliente.setText("Cliente");
-
-        jl_revista.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
-        jl_revista.setForeground(new java.awt.Color(153, 153, 153));
-        jl_revista.setText("Revista");
-
-        jl_midia.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
-        jl_midia.setForeground(new java.awt.Color(153, 153, 153));
-        jl_midia.setText("Mídia");
+        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 880, 100));
 
         jl_titulo.setBackground(new java.awt.Color(204, 204, 204));
         jl_titulo.setFont(new java.awt.Font("Hiragino Kaku Gothic ProN", 0, 36)); // NOI18N
         jl_titulo.setForeground(new java.awt.Color(204, 204, 204));
         jl_titulo.setText("REVISTEIRO DIGITAL");
         jl_titulo.setPreferredSize(new java.awt.Dimension(100, 50));
+        getContentPane().add(jl_titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, 410, 50));
 
-        jb_sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-salvar.png"))); // NOI18N
+        jb_salvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-salvar.png"))); // NOI18N
+        jb_salvar.setBorderPainted(false);
+        jb_salvar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_salvarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jb_salvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 510, -1, 60));
+
+        jb_sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-sair.png"))); // NOI18N
         jb_sair.setBorderPainted(false);
-        jb_sair.addActionListener(new java.awt.event.ActionListener() {
+        getContentPane().add(jb_sair, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 520, -1, -1));
+
+        jb_novo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-novo.png"))); // NOI18N
+        jb_novo.setBorderPainted(false);
+        getContentPane().add(jb_novo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 510, -1, -1));
+
+        jb_editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-editar.png"))); // NOI18N
+        jb_editar.setBorderPainted(false);
+        jb_editar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb_sairActionPerformed(evt);
+                jb_editarActionPerformed(evt);
             }
         });
+        getContentPane().add(jb_editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 510, -1, -1));
 
-        jb_sair1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-sair.png"))); // NOI18N
-        jb_sair1.setBorderPainted(false);
-
-        jb_sair2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-novo.png"))); // NOI18N
-        jb_sair2.setBorderPainted(false);
-
-        jb_sair3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-editar.png"))); // NOI18N
-        jb_sair3.setBorderPainted(false);
-        jb_sair3.addActionListener(new java.awt.event.ActionListener() {
+        jb_deletar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-deletar.png"))); // NOI18N
+        jb_deletar.setBorderPainted(false);
+        jb_deletar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb_sair3ActionPerformed(evt);
+                jb_deletarActionPerformed(evt);
             }
         });
-
-        jb_sair4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-deletar.png"))); // NOI18N
-        jb_sair4.setBorderPainted(false);
-        jb_sair4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb_sair4ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addComponent(jl_cliente))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addComponent(jl_revista))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addComponent(jl_midia))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addComponent(jl_usuario))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(jb_logocmn))
-            .addComponent(jl_fundoamarelo, javax.swing.GroupLayout.PREFERRED_SIZE, 880, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jl_logoflip)
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jl_titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_subtitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jb_sair2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jb_sair3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jb_sair4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jb_sair, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jb_sair1))
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jl_logoflip)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(41, 41, 41)
-                                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jl_titulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(14, 14, 14)
-                        .addComponent(jl_subtitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(75, 75, 75)
-                .addComponent(jl_cliente)
-                .addGap(1, 1, 1)
-                .addComponent(jl_revista)
-                .addGap(1, 1, 1)
-                .addComponent(jl_midia)
-                .addGap(1, 1, 1)
-                .addComponent(jl_usuario)
-                .addGap(151, 151, 151)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jb_sair2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(jb_sair3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(jb_sair4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(jb_sair, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(36, 36, 36)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(22, 22, 22)
-                                .addComponent(jb_logocmn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jl_fundoamarelo, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jb_sair1)))
-        );
+        getContentPane().add(jb_deletar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 510, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jb_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_sairActionPerformed
+    private void jb_editarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_editarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jb_sairActionPerformed
+    }//GEN-LAST:event_jb_editarActionPerformed
 
-    private void jb_sair3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_sair3ActionPerformed
+    private void jb_deletarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deletarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jb_sair3ActionPerformed
+    }//GEN-LAST:event_jb_deletarActionPerformed
 
-    private void jb_sair4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_sair4ActionPerformed
+    private void jb_salvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_salvarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jb_sair4ActionPerformed
+    }//GEN-LAST:event_jb_salvarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -250,19 +162,15 @@ public class Tela03 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JButton jb_deletar;
+    private javax.swing.JButton jb_editar;
     private javax.swing.JLabel jb_logocmn;
+    private javax.swing.JButton jb_novo;
     private javax.swing.JButton jb_sair;
-    private javax.swing.JButton jb_sair1;
-    private javax.swing.JButton jb_sair2;
-    private javax.swing.JButton jb_sair3;
-    private javax.swing.JButton jb_sair4;
-    private javax.swing.JLabel jl_cliente;
+    private javax.swing.JButton jb_salvar;
     private javax.swing.JLabel jl_fundoamarelo;
     private javax.swing.JLabel jl_logoflip;
-    private javax.swing.JLabel jl_midia;
-    private javax.swing.JLabel jl_revista;
     private javax.swing.JLabel jl_subtitulo;
     private javax.swing.JLabel jl_titulo;
-    private javax.swing.JLabel jl_usuario;
     // End of variables declaration//GEN-END:variables
 }
