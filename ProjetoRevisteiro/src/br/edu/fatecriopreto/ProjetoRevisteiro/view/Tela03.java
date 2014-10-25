@@ -37,7 +37,7 @@ public class Tela03 extends javax.swing.JFrame {
         jl_titulo = new javax.swing.JLabel();
         jb_salvar = new javax.swing.JButton();
         jb_sair = new javax.swing.JButton();
-        jb_novo = new javax.swing.JButton();
+        jb_sair2 = new javax.swing.JButton();
         jb_editar = new javax.swing.JButton();
         jb_deletar = new javax.swing.JButton();
 
@@ -87,9 +87,9 @@ public class Tela03 extends javax.swing.JFrame {
         jb_sair.setBorderPainted(false);
         getContentPane().add(jb_sair, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 520, -1, -1));
 
-        jb_novo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-novo.png"))); // NOI18N
-        jb_novo.setBorderPainted(false);
-        getContentPane().add(jb_novo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 510, -1, -1));
+        jb_sair2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-novo.png"))); // NOI18N
+        jb_sair2.setBorderPainted(false);
+        getContentPane().add(jb_sair2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 510, -1, -1));
 
         jb_editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-editar.png"))); // NOI18N
         jb_editar.setBorderPainted(false);
@@ -98,7 +98,7 @@ public class Tela03 extends javax.swing.JFrame {
                 jb_editarActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 510, -1, -1));
+        getContentPane().add(jb_editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 510, -1, 60));
 
         jb_deletar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-deletar.png"))); // NOI18N
         jb_deletar.setBorderPainted(false);
@@ -107,7 +107,7 @@ public class Tela03 extends javax.swing.JFrame {
                 jb_deletarActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_deletar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 510, -1, -1));
+        getContentPane().add(jb_deletar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 510, -1, 60));
 
         pack();
         setLocationRelativeTo(null);
@@ -165,8 +165,8 @@ public class Tela03 extends javax.swing.JFrame {
     private javax.swing.JButton jb_deletar;
     private javax.swing.JButton jb_editar;
     private javax.swing.JLabel jb_logocmn;
-    private javax.swing.JButton jb_novo;
     private javax.swing.JButton jb_sair;
+    private javax.swing.JButton jb_sair2;
     private javax.swing.JButton jb_salvar;
     private javax.swing.JLabel jl_fundoamarelo;
     private javax.swing.JLabel jl_logoflip;
