@@ -30,20 +30,28 @@ public class Tela03 extends javax.swing.JFrame {
     private void initComponents() {
 
         jl_logoflip = new javax.swing.JLabel();
-        jl_subtitulo = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jb_logocmn = new javax.swing.JLabel();
-        jl_fundoamarelo = new javax.swing.JLabel();
         jl_titulo = new javax.swing.JLabel();
-        jb_salvar = new javax.swing.JButton();
-        jb_sair = new javax.swing.JButton();
-        jb_sair2 = new javax.swing.JButton();
-        jb_editar = new javax.swing.JButton();
-        jb_deletar = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
+        jl_subtitulo = new javax.swing.JLabel();
         jb_usuario = new javax.swing.JButton();
+        jb_midia = new javax.swing.JButton();
         jb_cliente = new javax.swing.JButton();
         jb_revista = new javax.swing.JButton();
-        jb_midia = new javax.swing.JButton();
+        jb_novo = new javax.swing.JButton();
+        jb_editar = new javax.swing.JButton();
+        jb_deletar = new javax.swing.JButton();
+        jb_salvar = new javax.swing.JButton();
+        jb_sair = new javax.swing.JButton();
+        jb_logocmn = new javax.swing.JLabel();
+        jl_fundoamarelo = new javax.swing.JLabel();
+        jl_nome = new javax.swing.JLabel();
+        jt_nome = new javax.swing.JTextField();
+        jl_endereco = new javax.swing.JLabel();
+        jt_endereco = new javax.swing.JTextField();
+        jl_contato = new javax.swing.JLabel();
+        jt_contato = new javax.swing.JTextField();
+        jl_revista = new javax.swing.JLabel();
+        jc_revista = new javax.swing.JComboBox();
 
         setAutoRequestFocus(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -52,25 +60,6 @@ public class Tela03 extends javax.swing.JFrame {
         jl_logoflip.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-revisteiro.png"))); // NOI18N
         getContentPane().add(jl_logoflip, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
-        jl_subtitulo.setBackground(new java.awt.Color(204, 204, 204));
-        jl_subtitulo.setFont(new java.awt.Font("Myriad Pro", 1, 30)); // NOI18N
-        jl_subtitulo.setForeground(new java.awt.Color(204, 204, 204));
-        jl_subtitulo.setText("cadastro de cliente");
-        jl_subtitulo.setPreferredSize(new java.awt.Dimension(100, 50));
-        getContentPane().add(jl_subtitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 125, 410, 50));
-
-        jSeparator1.setBackground(new java.awt.Color(204, 204, 204));
-        jSeparator1.setForeground(new java.awt.Color(204, 204, 204));
-        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 101, 630, 10));
-
-        jb_logocmn.setForeground(new java.awt.Color(249, 171, 24));
-        jb_logocmn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-cmn.png"))); // NOI18N
-        getContentPane().add(jb_logocmn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 622, -1, 50));
-
-        jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
-        jl_fundoamarelo.setOpaque(true);
-        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 880, 100));
-
         jl_titulo.setBackground(new java.awt.Color(204, 204, 204));
         jl_titulo.setFont(new java.awt.Font("Hiragino Kaku Gothic ProN", 0, 36)); // NOI18N
         jl_titulo.setForeground(new java.awt.Color(204, 204, 204));
@@ -78,40 +67,16 @@ public class Tela03 extends javax.swing.JFrame {
         jl_titulo.setPreferredSize(new java.awt.Dimension(100, 50));
         getContentPane().add(jl_titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, 410, 50));
 
-        jb_salvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-salvar.png"))); // NOI18N
-        jb_salvar.setBorderPainted(false);
-        jb_salvar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb_salvarActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jb_salvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 510, -1, 60));
+        jSeparator1.setBackground(new java.awt.Color(204, 204, 204));
+        jSeparator1.setForeground(new java.awt.Color(204, 204, 204));
+        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 101, 630, 10));
 
-        jb_sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-sair.png"))); // NOI18N
-        jb_sair.setBorderPainted(false);
-        getContentPane().add(jb_sair, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 520, -1, -1));
-
-        jb_sair2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-novo.png"))); // NOI18N
-        jb_sair2.setBorderPainted(false);
-        getContentPane().add(jb_sair2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 510, -1, -1));
-
-        jb_editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-editar.png"))); // NOI18N
-        jb_editar.setBorderPainted(false);
-        jb_editar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb_editarActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jb_editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 510, -1, 60));
-
-        jb_deletar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-deletar.png"))); // NOI18N
-        jb_deletar.setBorderPainted(false);
-        jb_deletar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb_deletarActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jb_deletar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 510, -1, 60));
+        jl_subtitulo.setBackground(new java.awt.Color(204, 204, 204));
+        jl_subtitulo.setFont(new java.awt.Font("Myriad Pro", 1, 30)); // NOI18N
+        jl_subtitulo.setForeground(new java.awt.Color(204, 204, 204));
+        jl_subtitulo.setText("cadastro de cliente");
+        jl_subtitulo.setPreferredSize(new java.awt.Dimension(100, 50));
+        getContentPane().add(jl_subtitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 125, 410, 50));
 
         jb_usuario.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jb_usuario.setForeground(new java.awt.Color(153, 153, 153));
@@ -125,12 +90,24 @@ public class Tela03 extends javax.swing.JFrame {
         });
         getContentPane().add(jb_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 248, -1, -1));
 
+        jb_midia.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jb_midia.setForeground(new java.awt.Color(153, 153, 153));
+        jb_midia.setText("Mídia");
+        jb_midia.setBorderPainted(false);
+        jb_midia.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jb_midia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_midiaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jb_midia, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 289, -1, 30));
+
         jb_cliente.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jb_cliente.setForeground(new java.awt.Color(153, 153, 153));
         jb_cliente.setBorderPainted(false);
         jb_cliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jb_cliente.setLabel("Cliente");
-        getContentPane().add(jb_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+        getContentPane().add(jb_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 323, -1, -1));
 
         jb_revista.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jb_revista.setForeground(new java.awt.Color(153, 153, 153));
@@ -142,19 +119,94 @@ public class Tela03 extends javax.swing.JFrame {
                 jb_revistaActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
+        getContentPane().add(jb_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, -1, -1));
 
-        jb_midia.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
-        jb_midia.setForeground(new java.awt.Color(153, 153, 153));
-        jb_midia.setText("Mídia");
-        jb_midia.setBorderPainted(false);
-        jb_midia.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jb_midia.addActionListener(new java.awt.event.ActionListener() {
+        jb_novo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-novo.png"))); // NOI18N
+        jb_novo.setBorderPainted(false);
+        getContentPane().add(jb_novo, new org.netbeans.lib.awtextra.AbsoluteConstraints(205, 403, -1, -1));
+
+        jb_editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-editar.png"))); // NOI18N
+        jb_editar.setBorderPainted(false);
+        jb_editar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb_midiaActionPerformed(evt);
+                jb_editarActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_midia, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 282, -1, 30));
+        getContentPane().add(jb_editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(251, 400, -1, 60));
+
+        jb_deletar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-deletar.png"))); // NOI18N
+        jb_deletar.setBorderPainted(false);
+        jb_deletar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_deletarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jb_deletar, new org.netbeans.lib.awtextra.AbsoluteConstraints(303, 398, -1, 60));
+
+        jb_salvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-salvar.png"))); // NOI18N
+        jb_salvar.setBorderPainted(false);
+        jb_salvar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_salvarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jb_salvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 399, -1, 60));
+
+        jb_sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-sair.png"))); // NOI18N
+        jb_sair.setBorderPainted(false);
+        getContentPane().add(jb_sair, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 520, -1, -1));
+
+        jb_logocmn.setForeground(new java.awt.Color(249, 171, 24));
+        jb_logocmn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-cmn.png"))); // NOI18N
+        getContentPane().add(jb_logocmn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 622, -1, 50));
+
+        jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
+        jl_fundoamarelo.setOpaque(true);
+        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 880, 100));
+
+        jl_nome.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jl_nome.setForeground(new java.awt.Color(204, 204, 204));
+        jl_nome.setText("Nome");
+        getContentPane().add(jl_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, -1, -1));
+
+        jt_nome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jt_nomeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jt_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, 320, 40));
+
+        jl_endereco.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jl_endereco.setForeground(new java.awt.Color(204, 204, 204));
+        jl_endereco.setText("Endereço");
+        getContentPane().add(jl_endereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 323, -1, -1));
+
+        jt_endereco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jt_enderecoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jt_endereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 315, 320, 40));
+
+        jl_contato.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jl_contato.setForeground(new java.awt.Color(204, 204, 204));
+        jl_contato.setText("Contato");
+        getContentPane().add(jl_contato, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 287, -1, -1));
+
+        jt_contato.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jt_contatoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jt_contato, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 278, 320, 40));
+
+        jl_revista.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jl_revista.setForeground(new java.awt.Color(204, 204, 204));
+        jl_revista.setText("Revista");
+        getContentPane().add(jl_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, -1, -1));
+
+        jc_revista.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(jc_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 350, 322, 40));
 
         pack();
         setLocationRelativeTo(null);
@@ -183,6 +235,18 @@ public class Tela03 extends javax.swing.JFrame {
     private void jb_midiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_midiaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jb_midiaActionPerformed
+
+    private void jt_enderecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_enderecoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jt_enderecoActionPerformed
+
+    private void jt_nomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_nomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jt_nomeActionPerformed
+
+    private void jt_contatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_contatoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jt_contatoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -226,14 +290,22 @@ public class Tela03 extends javax.swing.JFrame {
     private javax.swing.JButton jb_editar;
     private javax.swing.JLabel jb_logocmn;
     private javax.swing.JButton jb_midia;
+    private javax.swing.JButton jb_novo;
     private javax.swing.JButton jb_revista;
     private javax.swing.JButton jb_sair;
-    private javax.swing.JButton jb_sair2;
     private javax.swing.JButton jb_salvar;
     private javax.swing.JButton jb_usuario;
+    private javax.swing.JComboBox jc_revista;
+    private javax.swing.JLabel jl_contato;
+    private javax.swing.JLabel jl_endereco;
     private javax.swing.JLabel jl_fundoamarelo;
     private javax.swing.JLabel jl_logoflip;
+    private javax.swing.JLabel jl_nome;
+    private javax.swing.JLabel jl_revista;
     private javax.swing.JLabel jl_subtitulo;
     private javax.swing.JLabel jl_titulo;
+    private javax.swing.JTextField jt_contato;
+    private javax.swing.JTextField jt_endereco;
+    private javax.swing.JTextField jt_nome;
     // End of variables declaration//GEN-END:variables
 }
