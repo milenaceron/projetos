@@ -40,6 +40,10 @@ public class Tela03 extends javax.swing.JFrame {
         jb_sair2 = new javax.swing.JButton();
         jb_editar = new javax.swing.JButton();
         jb_deletar = new javax.swing.JButton();
+        jb_usuario = new javax.swing.JButton();
+        jb_cliente = new javax.swing.JButton();
+        jb_revista = new javax.swing.JButton();
+        jb_midia = new javax.swing.JButton();
 
         setAutoRequestFocus(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -109,6 +113,49 @@ public class Tela03 extends javax.swing.JFrame {
         });
         getContentPane().add(jb_deletar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 510, -1, 60));
 
+        jb_usuario.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jb_usuario.setForeground(new java.awt.Color(153, 153, 153));
+        jb_usuario.setText("Usuário");
+        jb_usuario.setBorderPainted(false);
+        jb_usuario.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jb_usuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_usuarioActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jb_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 248, -1, -1));
+
+        jb_cliente.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jb_cliente.setForeground(new java.awt.Color(153, 153, 153));
+        jb_cliente.setBorderPainted(false);
+        jb_cliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jb_cliente.setLabel("Cliente");
+        getContentPane().add(jb_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+
+        jb_revista.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jb_revista.setForeground(new java.awt.Color(153, 153, 153));
+        jb_revista.setText("Revista");
+        jb_revista.setBorderPainted(false);
+        jb_revista.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jb_revista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_revistaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jb_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
+
+        jb_midia.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jb_midia.setForeground(new java.awt.Color(153, 153, 153));
+        jb_midia.setText("Mídia");
+        jb_midia.setBorderPainted(false);
+        jb_midia.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jb_midia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_midiaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jb_midia, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 282, -1, 30));
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -124,6 +171,18 @@ public class Tela03 extends javax.swing.JFrame {
     private void jb_salvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_salvarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jb_salvarActionPerformed
+
+    private void jb_usuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_usuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jb_usuarioActionPerformed
+
+    private void jb_revistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revistaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jb_revistaActionPerformed
+
+    private void jb_midiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_midiaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jb_midiaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -162,12 +221,16 @@ public class Tela03 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JButton jb_cliente;
     private javax.swing.JButton jb_deletar;
     private javax.swing.JButton jb_editar;
     private javax.swing.JLabel jb_logocmn;
+    private javax.swing.JButton jb_midia;
+    private javax.swing.JButton jb_revista;
     private javax.swing.JButton jb_sair;
     private javax.swing.JButton jb_sair2;
     private javax.swing.JButton jb_salvar;
+    private javax.swing.JButton jb_usuario;
     private javax.swing.JLabel jl_fundoamarelo;
     private javax.swing.JLabel jl_logoflip;
     private javax.swing.JLabel jl_subtitulo;
