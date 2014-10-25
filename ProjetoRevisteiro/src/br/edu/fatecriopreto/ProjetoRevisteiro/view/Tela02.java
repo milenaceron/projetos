@@ -29,57 +29,72 @@ public class Tela02 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jl_logoflip = new javax.swing.JLabel();
+        jl_voltar = new javax.swing.JLabel();
+        jb_voltar = new javax.swing.JButton();
+        jl_titulo = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
+        jb_revistadestaque = new javax.swing.JButton();
+        jl_titulorevista = new javax.swing.JLabel();
+        jl_descricao = new javax.swing.JLabel();
+        js_descricao = new javax.swing.JScrollPane();
         jTextPane2 = new javax.swing.JTextPane();
-        jLabel6 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
+        jl_categoria = new javax.swing.JLabel();
+        js_categoria = new javax.swing.JScrollPane();
         jTextPane3 = new javax.swing.JTextPane();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        jl_arquivo = new javax.swing.JLabel();
+        js_arquivo = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList();
-        jLabel7 = new javax.swing.JLabel();
+        jb_logocmn = new javax.swing.JLabel();
+        jl_fundoamarelo = new javax.swing.JLabel();
 
         setAutoRequestFocus(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setForeground(new java.awt.Color(249, 171, 24));
-        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/raphaelmachadofreire/NetBeansProjects/ProjetoRevisteiro/img/logo-revisteiro.png")); // NOI18N
+        jl_logoflip.setForeground(new java.awt.Color(249, 171, 24));
+        jl_logoflip.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-revisteiro.png"))); // NOI18N
+        getContentPane().add(jl_logoflip, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 0));
-        jButton4.setIcon(new javax.swing.ImageIcon("/Users/raphaelmachadofreire/NetBeansProjects/ProjetoRevisteiro/img/revista4.png")); // NOI18N
-        jButton4.setBorderPainted(false);
-        jButton4.setContentAreaFilled(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        jl_voltar.setFont(new java.awt.Font("Myriad Pro", 1, 18)); // NOI18N
+        jl_voltar.setForeground(new java.awt.Color(153, 153, 153));
+        jl_voltar.setText("voltar");
+        getContentPane().add(jl_voltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, -1));
+
+        jb_voltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-voltar.png"))); // NOI18N
+        jb_voltar.setBorderPainted(false);
+        getContentPane().add(jb_voltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
+
+        jl_titulo.setBackground(new java.awt.Color(204, 204, 204));
+        jl_titulo.setFont(new java.awt.Font("Hiragino Kaku Gothic ProN", 0, 36)); // NOI18N
+        jl_titulo.setForeground(new java.awt.Color(204, 204, 204));
+        jl_titulo.setText("REVISTEIRO DIGITAL");
+        jl_titulo.setPreferredSize(new java.awt.Dimension(100, 50));
+        getContentPane().add(jl_titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, 410, 50));
+
+        jSeparator1.setBackground(new java.awt.Color(204, 204, 204));
+        jSeparator1.setForeground(new java.awt.Color(204, 204, 204));
+        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 101, 630, 10));
+
+        jb_revistadestaque.setBackground(new java.awt.Color(0, 0, 0));
+        jb_revistadestaque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/revista4.png"))); // NOI18N
+        jb_revistadestaque.setBorderPainted(false);
+        jb_revistadestaque.setContentAreaFilled(false);
+        jb_revistadestaque.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                jb_revistadestaqueActionPerformed(evt);
             }
         });
+        getContentPane().add(jb_revistadestaque, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 145, 146, 209));
 
-        jButton9.setIcon(new javax.swing.ImageIcon("/Users/raphaelmachadofreire/NetBeansProjects/ProjetoRevisteiro/img/botao-voltar.png")); // NOI18N
-        jButton9.setBorderPainted(false);
+        jl_titulorevista.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jl_titulorevista.setForeground(new java.awt.Color(153, 153, 153));
+        jl_titulorevista.setText("ims health");
+        getContentPane().add(jl_titulorevista, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, -1, -1));
 
-        jLabel2.setForeground(new java.awt.Color(249, 171, 24));
-        jLabel2.setIcon(new javax.swing.ImageIcon("/Users/raphaelmachadofreire/NetBeansProjects/ProjetoRevisteiro/img/logo-cmn.png")); // NOI18N
-
-        jLabel3.setFont(new java.awt.Font("Hiragino Kaku Gothic ProN", 0, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel3.setText("REVISTEIRO DIGITAL");
-        jLabel3.setPreferredSize(new java.awt.Dimension(100, 50));
-
-        jLabel4.setFont(new java.awt.Font("Myriad Pro", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel4.setText("voltar");
-
-        jLabel5.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel5.setText("ims health");
+        jl_descricao.setFont(new java.awt.Font("Myriad Pro", 1, 18)); // NOI18N
+        jl_descricao.setForeground(new java.awt.Color(153, 153, 153));
+        jl_descricao.setText("edição_01");
+        getContentPane().add(jl_descricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 190, -1, 30));
 
         jTextPane2.setEditable(false);
         jTextPane2.setBackground(new java.awt.Color(238, 238, 238));
@@ -90,11 +105,14 @@ public class Tela02 extends javax.swing.JFrame {
         jTextPane2.setToolTipText("");
         jTextPane2.setAutoscrolls(false);
         jTextPane2.setOpaque(false);
-        jScrollPane2.setViewportView(jTextPane2);
+        js_descricao.setViewportView(jTextPane2);
 
-        jLabel6.setFont(new java.awt.Font("Myriad Pro", 1, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel6.setText("Categoria");
+        getContentPane().add(js_descricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 220, 207, 130));
+
+        jl_categoria.setFont(new java.awt.Font("Myriad Pro", 1, 18)); // NOI18N
+        jl_categoria.setForeground(new java.awt.Color(153, 153, 153));
+        jl_categoria.setText("Categoria");
+        getContentPane().add(jl_categoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 380, -1, -1));
 
         jTextPane3.setEditable(false);
         jTextPane3.setBackground(new java.awt.Color(238, 238, 238));
@@ -105,7 +123,14 @@ public class Tela02 extends javax.swing.JFrame {
         jTextPane3.setToolTipText("");
         jTextPane3.setAutoscrolls(false);
         jTextPane3.setOpaque(false);
-        jScrollPane3.setViewportView(jTextPane3);
+        js_categoria.setViewportView(jTextPane3);
+
+        getContentPane().add(js_categoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 410, 207, 30));
+
+        jl_arquivo.setFont(new java.awt.Font("Myriad Pro", 1, 18)); // NOI18N
+        jl_arquivo.setForeground(new java.awt.Color(153, 153, 153));
+        jl_arquivo.setText("arquivo");
+        getContentPane().add(jl_arquivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 190, -1, 30));
 
         jList1.setFont(new java.awt.Font("Myriad Pro", 0, 18)); // NOI18N
         jList1.setForeground(new java.awt.Color(102, 102, 102));
@@ -114,99 +139,25 @@ public class Tela02 extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane1.setViewportView(jList1);
+        js_arquivo.setViewportView(jList1);
 
-        jLabel7.setFont(new java.awt.Font("Myriad Pro", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel7.setText("edição_01");
+        getContentPane().add(js_arquivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 220, 155, 300));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jSeparator2)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel1)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jButton9)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel4)))
-                            .addGap(41, 41, 41)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 638, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(28, 28, 28)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel6)
-                                        .addComponent(jLabel5)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 207, Short.MAX_VALUE)
-                                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(58, 58, 58))))))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel7)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabel6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(70, 70, 70)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton9)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addComponent(jLabel4)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jLabel2)
-                .addGap(39, 39, 39))
-        );
+        jb_logocmn.setForeground(new java.awt.Color(249, 171, 24));
+        jb_logocmn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-cmn.png"))); // NOI18N
+        getContentPane().add(jb_logocmn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 622, -1, 50));
+
+        jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
+        jl_fundoamarelo.setOpaque(true);
+        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 880, 100));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void jb_revistadestaqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revistadestaqueActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_jb_revistadestaqueActionPerformed
 
     /**
      * @param args the command line arguments
@@ -244,22 +195,23 @@ public class Tela02 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JList jList1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTextPane jTextPane2;
     private javax.swing.JTextPane jTextPane3;
+    private javax.swing.JLabel jb_logocmn;
+    private javax.swing.JButton jb_revistadestaque;
+    private javax.swing.JButton jb_voltar;
+    private javax.swing.JLabel jl_arquivo;
+    private javax.swing.JLabel jl_categoria;
+    private javax.swing.JLabel jl_descricao;
+    private javax.swing.JLabel jl_fundoamarelo;
+    private javax.swing.JLabel jl_logoflip;
+    private javax.swing.JLabel jl_titulo;
+    private javax.swing.JLabel jl_titulorevista;
+    private javax.swing.JLabel jl_voltar;
+    private javax.swing.JScrollPane js_arquivo;
+    private javax.swing.JScrollPane js_categoria;
+    private javax.swing.JScrollPane js_descricao;
     // End of variables declaration//GEN-END:variables
 }
