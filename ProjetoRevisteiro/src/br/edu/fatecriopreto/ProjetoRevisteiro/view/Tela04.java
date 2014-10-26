@@ -216,7 +216,7 @@ public class Tela04 extends javax.swing.JFrame {
                 jt_descricaoActionPerformed(evt);
             }
         });
-        getContentPane().add(jt_descricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 433, 320, 40));
+        getContentPane().add(jt_descricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 434, 320, 40));
 
         jb_novo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-novo.png"))); // NOI18N
         jb_novo.setBorderPainted(false);
@@ -238,7 +238,7 @@ public class Tela04 extends javax.swing.JFrame {
                 jb_deletarActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_deletar, new org.netbeans.lib.awtextra.AbsoluteConstraints(303, 490, -1, 60));
+        getContentPane().add(jb_deletar, new org.netbeans.lib.awtextra.AbsoluteConstraints(303, 489, -1, 60));
 
         jb_salvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-salvar.png"))); // NOI18N
         jb_salvar.setBorderPainted(false);
