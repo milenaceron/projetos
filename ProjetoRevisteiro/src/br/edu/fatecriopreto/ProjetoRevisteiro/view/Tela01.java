@@ -42,6 +42,7 @@ public class Tela01 extends javax.swing.JFrame {
         jb_revista07 = new javax.swing.JButton();
         jb_revista08 = new javax.swing.JButton();
         jl_logocmn = new javax.swing.JLabel();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
         jl_fundoamarelo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -165,6 +166,9 @@ public class Tela01 extends javax.swing.JFrame {
         jl_logocmn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-cmn.png"))); // NOI18N
         getContentPane().add(jl_logocmn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 625, -1, -1));
 
+        jLayeredPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 700));
+
         jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
         jl_fundoamarelo.setOpaque(true);
         getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 880, 100));
@@ -241,6 +245,7 @@ public class Tela01 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JButton jb_login;
     private javax.swing.JButton jb_revista01;

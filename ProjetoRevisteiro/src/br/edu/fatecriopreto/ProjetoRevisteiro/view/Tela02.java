@@ -46,6 +46,7 @@ public class Tela02 extends javax.swing.JFrame {
         js_arquivo = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList();
         jb_logocmn = new javax.swing.JLabel();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
         jl_fundoamarelo = new javax.swing.JLabel();
 
         setAutoRequestFocus(false);
@@ -147,6 +148,9 @@ public class Tela02 extends javax.swing.JFrame {
         jb_logocmn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-cmn.png"))); // NOI18N
         getContentPane().add(jb_logocmn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 622, -1, 50));
 
+        jLayeredPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 700));
+
         jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
         jl_fundoamarelo.setOpaque(true);
         getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 880, 100));
@@ -195,6 +199,7 @@ public class Tela02 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JList jList1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextPane jTextPane2;

@@ -41,10 +41,10 @@ public class Tela06 extends javax.swing.JFrame {
         jt_nome = new javax.swing.JTextField();
         jl_cargo = new javax.swing.JLabel();
         jt_cargo = new javax.swing.JTextField();
-        jl_senha = new javax.swing.JLabel();
-        jt_senha = new javax.swing.JTextField();
+        jl_login = new javax.swing.JLabel();
+        jt_login = new javax.swing.JTextField();
         jl_confirmasenha = new javax.swing.JLabel();
-        jt_confirmasenha = new javax.swing.JTextField();
+        jt_senha = new javax.swing.JTextField();
         jb_novo = new javax.swing.JButton();
         jb_editar = new javax.swing.JButton();
         jb_deletar = new javax.swing.JButton();
@@ -145,29 +145,29 @@ public class Tela06 extends javax.swing.JFrame {
         });
         getContentPane().add(jt_cargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 278, 320, 40));
 
-        jl_senha.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
-        jl_senha.setForeground(new java.awt.Color(204, 204, 204));
-        jl_senha.setText("Senha");
-        getContentPane().add(jl_senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 323, -1, -1));
+        jl_login.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jl_login.setForeground(new java.awt.Color(204, 204, 204));
+        jl_login.setText("Login");
+        getContentPane().add(jl_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 323, -1, -1));
+
+        jt_login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jt_loginActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jt_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 315, 320, 40));
+
+        jl_confirmasenha.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jl_confirmasenha.setForeground(new java.awt.Color(204, 204, 204));
+        jl_confirmasenha.setText("Senha");
+        getContentPane().add(jl_confirmasenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 363, -1, -1));
 
         jt_senha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jt_senhaActionPerformed(evt);
             }
         });
-        getContentPane().add(jt_senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 315, 320, 40));
-
-        jl_confirmasenha.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
-        jl_confirmasenha.setForeground(new java.awt.Color(204, 204, 204));
-        jl_confirmasenha.setText("Confirma");
-        getContentPane().add(jl_confirmasenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 363, -1, -1));
-
-        jt_confirmasenha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jt_confirmasenhaActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jt_confirmasenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 352, 320, 40));
+        getContentPane().add(jt_senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 352, 320, 40));
 
         jb_novo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-novo.png"))); // NOI18N
         jb_novo.setBorderPainted(false);
@@ -240,9 +240,9 @@ public class Tela06 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jb_midiaActionPerformed
 
-    private void jt_confirmasenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_confirmasenhaActionPerformed
+    private void jt_senhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_senhaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jt_confirmasenhaActionPerformed
+    }//GEN-LAST:event_jt_senhaActionPerformed
 
     private void jt_nomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_nomeActionPerformed
         // TODO add your handling code here:
@@ -252,9 +252,9 @@ public class Tela06 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jt_cargoActionPerformed
 
-    private void jt_senhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_senhaActionPerformed
+    private void jt_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_loginActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jt_senhaActionPerformed
+    }//GEN-LAST:event_jt_loginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -306,13 +306,13 @@ public class Tela06 extends javax.swing.JFrame {
     private javax.swing.JLabel jl_cargo;
     private javax.swing.JLabel jl_confirmasenha;
     private javax.swing.JLabel jl_fundoamarelo;
+    private javax.swing.JLabel jl_login;
     private javax.swing.JLabel jl_logoflip;
     private javax.swing.JLabel jl_nome;
-    private javax.swing.JLabel jl_senha;
     private javax.swing.JLabel jl_subtitulo;
     private javax.swing.JLabel jl_titulo;
     private javax.swing.JTextField jt_cargo;
-    private javax.swing.JTextField jt_confirmasenha;
+    private javax.swing.JTextField jt_login;
     private javax.swing.JTextField jt_nome;
     private javax.swing.JTextField jt_senha;
     // End of variables declaration//GEN-END:variables
