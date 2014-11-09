@@ -169,6 +169,7 @@ public class Tela01 extends javax.swing.JFrame {
 
         jb_login.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao_admin.png"))); // NOI18N
         jb_login.setBorderPainted(false);
+        jb_login.setContentAreaFilled(false);
         getContentPane().add(jb_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(782, 30, -1, -1));
 
         pack();
