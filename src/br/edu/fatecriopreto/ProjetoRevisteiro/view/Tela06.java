@@ -82,6 +82,7 @@ public class Tela06 extends javax.swing.JFrame {
         jb_usuario.setForeground(new java.awt.Color(153, 153, 153));
         jb_usuario.setText("Usuário");
         jb_usuario.setBorderPainted(false);
+        jb_usuario.setContentAreaFilled(false);
         jb_usuario.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jb_usuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,6 +95,7 @@ public class Tela06 extends javax.swing.JFrame {
         jb_midia.setForeground(new java.awt.Color(153, 153, 153));
         jb_midia.setText("Mídia");
         jb_midia.setBorderPainted(false);
+        jb_midia.setContentAreaFilled(false);
         jb_midia.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jb_midia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,6 +107,7 @@ public class Tela06 extends javax.swing.JFrame {
         jb_cliente.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jb_cliente.setForeground(new java.awt.Color(153, 153, 153));
         jb_cliente.setBorderPainted(false);
+        jb_cliente.setContentAreaFilled(false);
         jb_cliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jb_cliente.setLabel("Cliente");
         getContentPane().add(jb_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 323, -1, -1));
@@ -113,6 +116,7 @@ public class Tela06 extends javax.swing.JFrame {
         jb_revista.setForeground(new java.awt.Color(153, 153, 153));
         jb_revista.setText("Revista");
         jb_revista.setBorderPainted(false);
+        jb_revista.setContentAreaFilled(false);
         jb_revista.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jb_revista.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,10 +175,12 @@ public class Tela06 extends javax.swing.JFrame {
 
         jb_novo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-novo.png"))); // NOI18N
         jb_novo.setBorderPainted(false);
+        jb_novo.setContentAreaFilled(false);
         getContentPane().add(jb_novo, new org.netbeans.lib.awtextra.AbsoluteConstraints(205, 403, -1, -1));
 
         jb_editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-editar.png"))); // NOI18N
         jb_editar.setBorderPainted(false);
+        jb_editar.setContentAreaFilled(false);
         jb_editar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_editarActionPerformed(evt);
@@ -184,6 +190,7 @@ public class Tela06 extends javax.swing.JFrame {
 
         jb_deletar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-deletar.png"))); // NOI18N
         jb_deletar.setBorderPainted(false);
+        jb_deletar.setContentAreaFilled(false);
         jb_deletar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_deletarActionPerformed(evt);
@@ -193,6 +200,7 @@ public class Tela06 extends javax.swing.JFrame {
 
         jb_salvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-salvar.png"))); // NOI18N
         jb_salvar.setBorderPainted(false);
+        jb_salvar.setContentAreaFilled(false);
         jb_salvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_salvarActionPerformed(evt);
@@ -202,6 +210,7 @@ public class Tela06 extends javax.swing.JFrame {
 
         jb_sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-sair.png"))); // NOI18N
         jb_sair.setBorderPainted(false);
+        jb_sair.setContentAreaFilled(false);
         getContentPane().add(jb_sair, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 520, -1, -1));
 
         jb_logocmn.setForeground(new java.awt.Color(249, 171, 24));

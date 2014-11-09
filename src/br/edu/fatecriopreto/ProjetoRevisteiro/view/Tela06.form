@@ -109,8 +109,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Usu&#xe1;rio"/>
         <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Cursor Default"/>
+          <Color id="Cursor Padr&#xe3;o"/>
         </Property>
       </Properties>
       <Events>
@@ -132,8 +133,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="M&#xed;dia"/>
         <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Cursor Default"/>
+          <Color id="Cursor Padr&#xe3;o"/>
         </Property>
       </Properties>
       <Events>
@@ -154,8 +156,9 @@
           <Color blue="99" green="99" red="99" type="rgb"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Cursor Default"/>
+          <Color id="Cursor Padr&#xe3;o"/>
         </Property>
         <Property name="label" type="java.lang.String" value="Cliente"/>
       </Properties>
@@ -175,8 +178,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Revista"/>
         <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Cursor Default"/>
+          <Color id="Cursor Padr&#xe3;o"/>
         </Property>
       </Properties>
       <Events>
@@ -298,6 +302,7 @@
           <Image iconType="3" name="/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-novo.png"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -311,6 +316,7 @@
           <Image iconType="3" name="/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-editar.png"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jb_editarActionPerformed"/>
@@ -327,6 +333,7 @@
           <Image iconType="3" name="/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-deletar.png"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jb_deletarActionPerformed"/>
@@ -343,6 +350,7 @@
           <Image iconType="3" name="/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-salvar.png"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jb_salvarActionPerformed"/>
@@ -359,6 +367,7 @@
           <Image iconType="3" name="/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-sair.png"/>
         </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
