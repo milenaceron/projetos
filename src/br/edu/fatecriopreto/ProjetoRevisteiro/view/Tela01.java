@@ -29,6 +29,7 @@ public class Tela01 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jb_sair = new javax.swing.JButton();
         jdpTela02 = new javax.swing.JDesktopPane();
         jl_logoflip = new javax.swing.JLabel();
         jl_titulo = new javax.swing.JLabel();
@@ -52,6 +53,18 @@ public class Tela01 extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jb_sair.setBackground(new java.awt.Color(255, 255, 255));
+        jb_sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-sair-preto.png"))); // NOI18N
+        jb_sair.setToolTipText("Fechar");
+        jb_sair.setBorderPainted(false);
+        jb_sair.setContentAreaFilled(false);
+        jb_sair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_sairActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jb_sair, new org.netbeans.lib.awtextra.AbsoluteConstraints(798, 620, -1, -1));
+
         jdpTela02.setBackground(new java.awt.Color(255, 196, 0));
         jdpTela02.setEnabled(false);
         jdpTela02.setOpaque(false);
@@ -68,7 +81,6 @@ public class Tela01 extends javax.swing.JFrame {
         );
 
         getContentPane().add(jdpTela02, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 700));
-        jdpTela02.getAccessibleContext().setAccessibleParent(null);
 
         jl_logoflip.setForeground(new java.awt.Color(249, 171, 24));
         jl_logoflip.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-revisteiro.png"))); // NOI18N
@@ -183,6 +195,7 @@ public class Tela01 extends javax.swing.JFrame {
         getContentPane().add(jb_revista05, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, 146, 209));
 
         jb_login.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao_admin.png"))); // NOI18N
+        jb_login.setToolTipText("Configuração");
         jb_login.setBorderPainted(false);
         jb_login.setContentAreaFilled(false);
         jb_login.addActionListener(new java.awt.event.ActionListener() {
@@ -255,8 +268,13 @@ public class Tela01 extends javax.swing.JFrame {
 
     private void jb_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_loginActionPerformed
         // TODO add your handling code here:
-     
+    criarJanelaInternalFrameLogin();
     }//GEN-LAST:event_jb_loginActionPerformed
+
+    private void jb_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_sairActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jb_sairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -309,6 +327,7 @@ public class Tela01 extends javax.swing.JFrame {
     private javax.swing.JButton jb_revista06;
     private javax.swing.JButton jb_revista07;
     private javax.swing.JButton jb_revista08;
+    private javax.swing.JButton jb_sair;
     private javax.swing.JDesktopPane jdpTela02;
     private javax.swing.JLabel jl_fundoamarelo1;
     private javax.swing.JLabel jl_fundobranco;
@@ -317,6 +336,7 @@ public class Tela01 extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     InternalFrameTela02 internalFrameTela02;
+    InternalFrameTela07 internalFrameTela07;
     
     private void criarJanelaInternalFrame() {
         if(internalFrameTela02 == null){
@@ -325,5 +345,13 @@ public class Tela01 extends javax.swing.JFrame {
         jdpTela02.add(internalFrameTela02);
         internalFrameTela02.setVisible(true);
        
+    }
+
+    private void criarJanelaInternalFrameLogin() {
+       if(internalFrameTela07 == null){
+        internalFrameTela07 = new InternalFrameTela07();
+        }
+        jdpTela02.add(internalFrameTela07);
+        internalFrameTela07.setVisible(true);
     }
 }
