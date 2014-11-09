@@ -63,6 +63,7 @@ public class Tela02 extends javax.swing.JFrame {
 
         jb_voltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-voltar.png"))); // NOI18N
         jb_voltar.setBorderPainted(false);
+        jb_voltar.setContentAreaFilled(false);
         jb_voltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_voltarActionPerformed(evt);
@@ -105,7 +106,7 @@ public class Tela02 extends javax.swing.JFrame {
         jTextPane2.setEditable(false);
         jTextPane2.setBackground(new java.awt.Color(238, 238, 238));
         jTextPane2.setBorder(null);
-        jTextPane2.setFont(new java.awt.Font("Myriad Pro", 0, 16)); // NOI18N
+        jTextPane2.setFont(new java.awt.Font("Helvetica", 0, 15)); // NOI18N
         jTextPane2.setForeground(new java.awt.Color(102, 102, 102));
         jTextPane2.setText("Desde 1969 no Brasil, a IMS Health é lider global em informações, tecnologia e serviços para a área da saúde, e oferece a seus clientes soluções completas para mensurar e impulsionar sua performance.");
         jTextPane2.setToolTipText("");
@@ -123,7 +124,7 @@ public class Tela02 extends javax.swing.JFrame {
         jTextPane3.setEditable(false);
         jTextPane3.setBackground(new java.awt.Color(238, 238, 238));
         jTextPane3.setBorder(null);
-        jTextPane3.setFont(new java.awt.Font("Myriad Pro", 0, 16)); // NOI18N
+        jTextPane3.setFont(new java.awt.Font("Helvetica", 0, 15)); // NOI18N
         jTextPane3.setForeground(new java.awt.Color(102, 102, 102));
         jTextPane3.setText("Pesquisa, saúde, inovação ");
         jTextPane3.setToolTipText("");
@@ -138,7 +139,7 @@ public class Tela02 extends javax.swing.JFrame {
         jl_arquivo.setText("arquivo");
         getContentPane().add(jl_arquivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 190, -1, 30));
 
-        jList1.setFont(new java.awt.Font("Myriad Pro", 0, 18)); // NOI18N
+        jList1.setFont(new java.awt.Font("Helvetica", 0, 15)); // NOI18N
         jList1.setForeground(new java.awt.Color(102, 102, 102));
         jList1.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "edição_01", "edição_02", "edição_03", "edição_04", "edição_05", "edição_06", "edição_09", "edição_10", "edição_12", "edição_13", "edição_14", "edição_15" };
@@ -147,7 +148,7 @@ public class Tela02 extends javax.swing.JFrame {
         });
         js_arquivo.setViewportView(jList1);
 
-        getContentPane().add(js_arquivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 220, 155, 300));
+        getContentPane().add(js_arquivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 220, 155, 220));
 
         jb_logocmn.setForeground(new java.awt.Color(249, 171, 24));
         jb_logocmn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-cmn.png"))); // NOI18N
