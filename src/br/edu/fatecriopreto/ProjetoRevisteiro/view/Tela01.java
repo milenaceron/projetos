@@ -183,53 +183,52 @@ public class Tela01 extends javax.swing.JFrame {
 
     private void jb_revista01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista01ActionPerformed
         // TODO add your handling code here:
-        new Tela02().setVisible(true);
+       
     }//GEN-LAST:event_jb_revista01ActionPerformed
 
     private void jb_revista02ComponentMoved(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jb_revista02ComponentMoved
         // TODO add your handling code here:
-        new Tela02().setVisible(true);
+    
     }//GEN-LAST:event_jb_revista02ComponentMoved
 
     private void jb_revista02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista02ActionPerformed
         // TODO add your handling code here:
-        new Tela02().setVisible(true);
+ 
     }//GEN-LAST:event_jb_revista02ActionPerformed
 
     private void jb_revista03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista03ActionPerformed
         // TODO add your handling code here:
-        new Tela02().setVisible(true);
+ 
     }//GEN-LAST:event_jb_revista03ActionPerformed
 
     private void jb_revista04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista04ActionPerformed
 
-        new Tela02().setVisible(true);
 
     }//GEN-LAST:event_jb_revista04ActionPerformed
 
     private void jb_revista08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista08ActionPerformed
         // TODO add your handling code here:
-        new Tela02().setVisible(true);
+       
     }//GEN-LAST:event_jb_revista08ActionPerformed
 
     private void jb_revista07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista07ActionPerformed
         // TODO add your handling code here:
-        new Tela02().setVisible(true);
+      new Tela02().setVisible(true);
     }//GEN-LAST:event_jb_revista07ActionPerformed
 
     private void jb_revista06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista06ActionPerformed
         // TODO add your handling code here:
-        new Tela02().setVisible(true);
+      new Tela02().setVisible(true);
     }//GEN-LAST:event_jb_revista06ActionPerformed
 
     private void jb_revista05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista05ActionPerformed
         // TODO add your handling code here:
-        new Tela02().setVisible(true);
+      new Tela02().setVisible(true);
     }//GEN-LAST:event_jb_revista05ActionPerformed
 
     private void jb_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_loginActionPerformed
         // TODO add your handling code here:
-        new Tela07().setVisible(true);
+      new Tela07().setVisible(true);
     }//GEN-LAST:event_jb_loginActionPerformed
 
     /**
