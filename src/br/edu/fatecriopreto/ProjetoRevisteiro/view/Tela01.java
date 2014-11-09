@@ -29,6 +29,7 @@ public class Tela01 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jdpTela02 = new javax.swing.JDesktopPane();
         jl_logoflip = new javax.swing.JLabel();
         jl_titulo = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -43,10 +44,31 @@ public class Tela01 extends javax.swing.JFrame {
         jb_revista05 = new javax.swing.JButton();
         jb_login = new javax.swing.JButton();
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        jl_fundoamarelo = new javax.swing.JLabel();
+        jl_fundobranco = new javax.swing.JLabel();
+        jl_fundoamarelo1 = new javax.swing.JLabel();
 
         setAutoRequestFocus(false);
+        setBackground(new java.awt.Color(255, 255, 255));
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jdpTela02.setBackground(new java.awt.Color(255, 196, 0));
+        jdpTela02.setEnabled(false);
+        jdpTela02.setOpaque(false);
+
+        javax.swing.GroupLayout jdpTela02Layout = new javax.swing.GroupLayout(jdpTela02);
+        jdpTela02.setLayout(jdpTela02Layout);
+        jdpTela02Layout.setHorizontalGroup(
+            jdpTela02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 880, Short.MAX_VALUE)
+        );
+        jdpTela02Layout.setVerticalGroup(
+            jdpTela02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 700, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jdpTela02, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 700));
+        jdpTela02.getAccessibleContext().setAccessibleParent(null);
 
         jl_logoflip.setForeground(new java.awt.Color(249, 171, 24));
         jl_logoflip.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-revisteiro.png"))); // NOI18N
@@ -173,9 +195,13 @@ public class Tela01 extends javax.swing.JFrame {
         jLayeredPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 700));
 
-        jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
-        jl_fundoamarelo.setOpaque(true);
-        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 880, 100));
+        jl_fundobranco.setBackground(new java.awt.Color(255, 255, 255));
+        jl_fundobranco.setOpaque(true);
+        getContentPane().add(jl_fundobranco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 600));
+
+        jl_fundoamarelo1.setBackground(new java.awt.Color(235, 196, 13));
+        jl_fundoamarelo1.setOpaque(true);
+        getContentPane().add(jl_fundoamarelo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 880, 100));
 
         pack();
         setLocationRelativeTo(null);
@@ -183,6 +209,7 @@ public class Tela01 extends javax.swing.JFrame {
 
     private void jb_revista01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista01ActionPerformed
         // TODO add your handling code here:
+        criarJanelaInternalFrame();
        
     }//GEN-LAST:event_jb_revista01ActionPerformed
 
@@ -213,22 +240,22 @@ public class Tela01 extends javax.swing.JFrame {
 
     private void jb_revista07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista07ActionPerformed
         // TODO add your handling code here:
-      new Tela02().setVisible(true);
+
     }//GEN-LAST:event_jb_revista07ActionPerformed
 
     private void jb_revista06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista06ActionPerformed
         // TODO add your handling code here:
-      new Tela02().setVisible(true);
+   
     }//GEN-LAST:event_jb_revista06ActionPerformed
 
     private void jb_revista05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista05ActionPerformed
         // TODO add your handling code here:
-      new Tela02().setVisible(true);
+     
     }//GEN-LAST:event_jb_revista05ActionPerformed
 
     private void jb_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_loginActionPerformed
         // TODO add your handling code here:
-      new Tela07().setVisible(true);
+     
     }//GEN-LAST:event_jb_loginActionPerformed
 
     /**
@@ -282,8 +309,21 @@ public class Tela01 extends javax.swing.JFrame {
     private javax.swing.JButton jb_revista06;
     private javax.swing.JButton jb_revista07;
     private javax.swing.JButton jb_revista08;
-    private javax.swing.JLabel jl_fundoamarelo;
+    private javax.swing.JDesktopPane jdpTela02;
+    private javax.swing.JLabel jl_fundoamarelo1;
+    private javax.swing.JLabel jl_fundobranco;
     private javax.swing.JLabel jl_logoflip;
     private javax.swing.JLabel jl_titulo;
     // End of variables declaration//GEN-END:variables
+
+    InternalFrameTela02 internalFrameTela02;
+    
+    private void criarJanelaInternalFrame() {
+        if(internalFrameTela02 == null){
+        internalFrameTela02 = new InternalFrameTela02();
+        }
+        jdpTela02.add(internalFrameTela02);
+        internalFrameTela02.setVisible(true);
+       
+    }
 }
