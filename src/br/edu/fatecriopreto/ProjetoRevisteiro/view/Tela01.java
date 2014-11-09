@@ -33,8 +33,6 @@ public class Tela01 extends javax.swing.JFrame {
         jl_titulo = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jb_logocmn = new javax.swing.JLabel();
-        jLayeredPane1 = new javax.swing.JLayeredPane();
-        jl_fundoamarelo = new javax.swing.JLabel();
         jb_revista01 = new javax.swing.JButton();
         jb_revista02 = new javax.swing.JButton();
         jb_revista03 = new javax.swing.JButton();
@@ -44,6 +42,8 @@ public class Tela01 extends javax.swing.JFrame {
         jb_revista06 = new javax.swing.JButton();
         jb_revista05 = new javax.swing.JButton();
         jb_login = new javax.swing.JButton();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        jl_fundoamarelo = new javax.swing.JLabel();
 
         setAutoRequestFocus(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -66,13 +66,6 @@ public class Tela01 extends javax.swing.JFrame {
         jb_logocmn.setForeground(new java.awt.Color(249, 171, 24));
         jb_logocmn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-cmn.png"))); // NOI18N
         getContentPane().add(jb_logocmn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 622, -1, 50));
-
-        jLayeredPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
-        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 700));
-
-        jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
-        jl_fundoamarelo.setOpaque(true);
-        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 880, 100));
 
         jb_revista01.setBackground(new java.awt.Color(0, 0, 0));
         jb_revista01.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/revista1.png"))); // NOI18N
@@ -170,7 +163,19 @@ public class Tela01 extends javax.swing.JFrame {
         jb_login.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao_admin.png"))); // NOI18N
         jb_login.setBorderPainted(false);
         jb_login.setContentAreaFilled(false);
+        jb_login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_loginActionPerformed(evt);
+            }
+        });
         getContentPane().add(jb_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(782, 30, -1, -1));
+
+        jLayeredPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 700));
+
+        jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
+        jl_fundoamarelo.setOpaque(true);
+        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 880, 100));
 
         pack();
         setLocationRelativeTo(null);
@@ -183,6 +188,7 @@ public class Tela01 extends javax.swing.JFrame {
 
     private void jb_revista02ComponentMoved(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jb_revista02ComponentMoved
         // TODO add your handling code here:
+        new Tela02().setVisible(true);
     }//GEN-LAST:event_jb_revista02ComponentMoved
 
     private void jb_revista02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista02ActionPerformed
@@ -208,15 +214,23 @@ public class Tela01 extends javax.swing.JFrame {
 
     private void jb_revista07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista07ActionPerformed
         // TODO add your handling code here:
+        new Tela02().setVisible(true);
     }//GEN-LAST:event_jb_revista07ActionPerformed
 
     private void jb_revista06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista06ActionPerformed
         // TODO add your handling code here:
+        new Tela02().setVisible(true);
     }//GEN-LAST:event_jb_revista06ActionPerformed
 
     private void jb_revista05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revista05ActionPerformed
         // TODO add your handling code here:
+        new Tela02().setVisible(true);
     }//GEN-LAST:event_jb_revista05ActionPerformed
+
+    private void jb_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_loginActionPerformed
+        // TODO add your handling code here:
+        new Tela07().setVisible(true);
+    }//GEN-LAST:event_jb_loginActionPerformed
 
     /**
      * @param args the command line arguments
