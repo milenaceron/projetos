@@ -91,11 +91,9 @@ create table revistas(
 
 
 create table clientes_revistas(
-		cliente_id	int 	not null,
-		revista_id	int 	not null,
-		primary key(cliente_id, revista_id),
-		foreign key(cliente_id)	references clientes(id),
-		foreign key(revista_id)	references revistas(id));
+		cliente_id	int 	not null references clientes(id),
+		revista_id	int 	not null references revistas(id),
+		primary key(cliente_id, revista_id));
 
 
 create table edicoes(
