@@ -62,6 +62,7 @@ public class Tela07 extends javax.swing.JFrame {
 
         jb_sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-entrar.png"))); // NOI18N
         jb_sair.setBorderPainted(false);
+        jb_sair.setContentAreaFilled(false);
         jb_sair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_sairActionPerformed(evt);
@@ -70,10 +71,11 @@ public class Tela07 extends javax.swing.JFrame {
         jLayeredPane1.add(jb_sair);
         jb_sair.setBounds(790, 620, 51, 47);
 
-        jb_revista.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jb_revista.setFont(new java.awt.Font("Helvetica", 1, 18)); // NOI18N
         jb_revista.setForeground(new java.awt.Color(153, 153, 153));
         jb_revista.setText("Esqueceu a sua senha?");
         jb_revista.setBorderPainted(false);
+        jb_revista.setContentAreaFilled(false);
         jb_revista.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jb_revista.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,7 +83,7 @@ public class Tela07 extends javax.swing.JFrame {
             }
         });
         jLayeredPane1.add(jb_revista);
-        jb_revista.setBounds(20, 630, 300, 40);
+        jb_revista.setBounds(20, 630, 260, 40);
 
         getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 700));
 
