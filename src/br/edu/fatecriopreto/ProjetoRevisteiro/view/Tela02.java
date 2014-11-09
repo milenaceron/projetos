@@ -166,8 +166,8 @@ public class Tela02 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jb_revistadestaqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revistadestaqueActionPerformed
-        
-        new Tela01().setVisible(true);
+        // TODO add your handling code here:
+      
 
     }//GEN-LAST:event_jb_revistadestaqueActionPerformed
 
