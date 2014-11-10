@@ -45,8 +45,9 @@ public class InternalFrameTela06 extends javax.swing.JInternalFrame {
         jt_cargo = new javax.swing.JTextField();
         jl_cargo = new javax.swing.JLabel();
         jl_nome = new javax.swing.JLabel();
-        jt_nome = new javax.swing.JTextField();
+        jl_fundoamarelo = new javax.swing.JLabel();
         jl_fundobranco = new javax.swing.JLabel();
+        jt_nome = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setVisible(true);
@@ -165,16 +166,20 @@ public class InternalFrameTela06 extends javax.swing.JInternalFrame {
         jl_nome.setText("Nome");
         getContentPane().add(jl_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, -1, -1));
 
+        jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
+        jl_fundoamarelo.setOpaque(true);
+        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 495, 810, 15));
+
+        jl_fundobranco.setBackground(new java.awt.Color(255, 255, 255));
+        jl_fundobranco.setOpaque(true);
+        getContentPane().add(jl_fundobranco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 510));
+
         jt_nome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jt_nomeActionPerformed(evt);
             }
         });
         getContentPane().add(jt_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 190, 320, 40));
-
-        jl_fundobranco.setBackground(new java.awt.Color(255, 255, 255));
-        jl_fundobranco.setOpaque(true);
-        getContentPane().add(jl_fundobranco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 510));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -222,6 +227,7 @@ public class InternalFrameTela06 extends javax.swing.JInternalFrame {
     private javax.swing.JButton jb_voltar;
     private javax.swing.JLabel jl_cargo;
     private javax.swing.JLabel jl_confirmasenha;
+    private javax.swing.JLabel jl_fundoamarelo;
     private javax.swing.JLabel jl_fundobranco;
     private javax.swing.JLabel jl_login;
     private javax.swing.JLabel jl_logoflip;

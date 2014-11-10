@@ -45,6 +45,7 @@ public class InternalFrameTela05 extends javax.swing.JInternalFrame {
         jt_nome = new javax.swing.JTextField();
         jc_revista = new javax.swing.JComboBox();
         jc_tipo = new javax.swing.JComboBox();
+        jl_fundoamarelo = new javax.swing.JLabel();
         jl_fundobranco = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -156,6 +157,10 @@ public class InternalFrameTela05 extends javax.swing.JInternalFrame {
         jc_tipo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         getContentPane().add(jc_tipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 267, 120, 25));
 
+        jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
+        jl_fundoamarelo.setOpaque(true);
+        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 495, 810, 25));
+
         jl_fundobranco.setBackground(new java.awt.Color(255, 255, 255));
         jl_fundobranco.setOpaque(true);
         getContentPane().add(jl_fundobranco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 510));
@@ -194,6 +199,7 @@ public class InternalFrameTela05 extends javax.swing.JInternalFrame {
     private javax.swing.JButton jb_voltar;
     private javax.swing.JComboBox jc_revista;
     private javax.swing.JComboBox jc_tipo;
+    private javax.swing.JLabel jl_fundoamarelo;
     private javax.swing.JLabel jl_fundobranco;
     private javax.swing.JLabel jl_logoflip;
     private javax.swing.JLabel jl_nome;

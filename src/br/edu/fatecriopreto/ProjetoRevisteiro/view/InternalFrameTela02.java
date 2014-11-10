@@ -44,6 +44,7 @@ public class InternalFrameTela02 extends javax.swing.JInternalFrame {
         jl_arquivo = new javax.swing.JLabel();
         js_arquivo = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList();
+        jl_fundoamarelo = new javax.swing.JLabel();
         jl_fundobranco = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -148,6 +149,10 @@ public class InternalFrameTela02 extends javax.swing.JInternalFrame {
 
         getContentPane().add(js_arquivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 220, 155, 220));
 
+        jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
+        jl_fundoamarelo.setOpaque(true);
+        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 495, 810, 15));
+
         jl_fundobranco.setBackground(new java.awt.Color(255, 255, 255));
         jl_fundobranco.setOpaque(true);
         getContentPane().add(jl_fundobranco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 510));
@@ -176,6 +181,7 @@ public class InternalFrameTela02 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jl_arquivo;
     private javax.swing.JLabel jl_categoria;
     private javax.swing.JLabel jl_descricao;
+    private javax.swing.JLabel jl_fundoamarelo;
     private javax.swing.JLabel jl_fundobranco;
     private javax.swing.JLabel jl_logoflip;
     private javax.swing.JLabel jl_titulo;

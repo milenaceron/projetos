@@ -46,6 +46,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jb_editar = new javax.swing.JButton();
         jb_deletar = new javax.swing.JButton();
         jb_salvar = new javax.swing.JButton();
+        jl_fundoamarelo = new javax.swing.JLabel();
         jl_fundobranco = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -168,6 +169,10 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         });
         getContentPane().add(jb_salvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, -1, 60));
 
+        jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
+        jl_fundoamarelo.setOpaque(true);
+        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 495, 810, 15));
+
         jl_fundobranco.setBackground(new java.awt.Color(255, 255, 255));
         jl_fundobranco.setOpaque(true);
         getContentPane().add(jl_fundobranco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 510));
@@ -215,6 +220,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
     private javax.swing.JComboBox jc_revista;
     private javax.swing.JLabel jl_contato;
     private javax.swing.JLabel jl_endereco;
+    private javax.swing.JLabel jl_fundoamarelo;
     private javax.swing.JLabel jl_fundobranco;
     private javax.swing.JLabel jl_logoflip;
     private javax.swing.JLabel jl_nome;

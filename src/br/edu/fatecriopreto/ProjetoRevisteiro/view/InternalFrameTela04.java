@@ -54,6 +54,7 @@ public class InternalFrameTela04 extends javax.swing.JInternalFrame {
         jt_url = new javax.swing.JTextField();
         jt_descricao = new javax.swing.JTextField();
         jl_descricao = new javax.swing.JLabel();
+        jl_fundoamarelo = new javax.swing.JLabel();
         jl_fundobranco = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -220,6 +221,10 @@ public class InternalFrameTela04 extends javax.swing.JInternalFrame {
         jl_descricao.setText("Descrição");
         getContentPane().add(jl_descricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 377, -1, -1));
 
+        jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
+        jl_fundoamarelo.setOpaque(true);
+        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 495, 810, 15));
+
         jl_fundobranco.setBackground(new java.awt.Color(255, 255, 255));
         jl_fundobranco.setOpaque(true);
         getContentPane().add(jl_fundobranco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 510));
@@ -283,6 +288,7 @@ public class InternalFrameTela04 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jl_data;
     private javax.swing.JLabel jl_descricao;
     private javax.swing.JLabel jl_edicao;
+    private javax.swing.JLabel jl_fundoamarelo;
     private javax.swing.JLabel jl_fundobranco;
     private javax.swing.JLabel jl_imagem;
     private javax.swing.JLabel jl_logoflip;
