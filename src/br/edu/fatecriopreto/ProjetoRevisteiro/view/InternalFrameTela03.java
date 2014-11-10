@@ -72,7 +72,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jl_subtitulo.setForeground(new java.awt.Color(204, 204, 204));
         jl_subtitulo.setText("cadastro de cliente");
         jl_subtitulo.setPreferredSize(new java.awt.Dimension(100, 50));
-        getContentPane().add(jl_subtitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 410, 50));
+        getContentPane().add(jl_subtitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, 410, 50));
 
         jl_logoflip.setForeground(new java.awt.Color(249, 171, 24));
         jl_logoflip.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-revisteiro.png"))); // NOI18N
