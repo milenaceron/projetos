@@ -39,10 +39,11 @@ public class Tela08 extends javax.swing.JFrame {
         jb_midia = new javax.swing.JButton();
         jb_cliente = new javax.swing.JButton();
         jb_revista = new javax.swing.JButton();
-        jb_sair = new javax.swing.JButton();
         jb_logocmn = new javax.swing.JLabel();
         jLayeredPane2 = new javax.swing.JLayeredPane();
         jl_fundobranco = new javax.swing.JLabel();
+        jl_imagem_fundo = new javax.swing.JLabel();
+        jb_sair = new javax.swing.JButton();
         jl_fundobranco1 = new javax.swing.JLabel();
         jl_fundoamarelo = new javax.swing.JLabel();
 
@@ -146,11 +147,6 @@ public class Tela08 extends javax.swing.JFrame {
         });
         getContentPane().add(jb_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, -1, -1));
 
-        jb_sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-sair.png"))); // NOI18N
-        jb_sair.setBorderPainted(false);
-        jb_sair.setContentAreaFilled(false);
-        getContentPane().add(jb_sair, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 520, -1, -1));
-
         jb_logocmn.setForeground(new java.awt.Color(249, 171, 24));
         jb_logocmn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-cmn.png"))); // NOI18N
         getContentPane().add(jb_logocmn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 622, -1, 50));
@@ -161,6 +157,21 @@ public class Tela08 extends javax.swing.JFrame {
         jl_fundobranco.setOpaque(true);
         jLayeredPane2.add(jl_fundobranco);
         jl_fundobranco.setBounds(0, 0, 0, 0);
+
+        jl_imagem_fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/imagem-dashboard.png"))); // NOI18N
+        jLayeredPane2.add(jl_imagem_fundo);
+        jl_imagem_fundo.setBounds(210, 170, 650, 420);
+
+        jb_sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-sair-preto.png"))); // NOI18N
+        jb_sair.setBorderPainted(false);
+        jb_sair.setContentAreaFilled(false);
+        jb_sair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_sairActionPerformed(evt);
+            }
+        });
+        jLayeredPane2.add(jb_sair);
+        jb_sair.setBounds(810, 620, 51, 47);
 
         getContentPane().add(jLayeredPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 700));
 
@@ -187,6 +198,11 @@ public class Tela08 extends javax.swing.JFrame {
     private void jb_midiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_midiaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jb_midiaActionPerformed
+
+    private void jb_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_sairActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jb_sairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -238,6 +254,7 @@ public class Tela08 extends javax.swing.JFrame {
     private javax.swing.JLabel jl_fundoamarelo;
     private javax.swing.JLabel jl_fundobranco;
     private javax.swing.JLabel jl_fundobranco1;
+    private javax.swing.JLabel jl_imagem_fundo;
     private javax.swing.JLabel jl_logoflip;
     private javax.swing.JLabel jl_subtitulo;
     private javax.swing.JLabel jl_titulo;
