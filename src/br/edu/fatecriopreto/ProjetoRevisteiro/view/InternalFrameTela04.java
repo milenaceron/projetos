@@ -174,32 +174,32 @@ public class InternalFrameTela04 extends javax.swing.JInternalFrame {
         jl_edicao.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jl_edicao.setForeground(new java.awt.Color(204, 204, 204));
         jl_edicao.setText("Edição");
-        getContentPane().add(jl_edicao, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, -1, -1));
+        getContentPane().add(jl_edicao, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 242, -1, -1));
 
         jl_imagem.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jl_imagem.setForeground(new java.awt.Color(204, 204, 204));
         jl_imagem.setText("Imagem");
-        getContentPane().add(jl_imagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, -1, -1));
+        getContentPane().add(jl_imagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 272, -1, -1));
 
         jc_imagem.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        getContentPane().add(jc_imagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 322, 25));
+        getContentPane().add(jc_imagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 271, 322, 25));
 
         jt_categoria.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jt_categoriaActionPerformed(evt);
             }
         });
-        getContentPane().add(jt_categoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 293, 320, 40));
+        getContentPane().add(jt_categoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 295, 320, 40));
 
         jl_categoria.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jl_categoria.setForeground(new java.awt.Color(204, 204, 204));
         jl_categoria.setText("Categoria");
-        getContentPane().add(jl_categoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 303, -1, -1));
+        getContentPane().add(jl_categoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 306, -1, -1));
 
         jl_url.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jl_url.setForeground(new java.awt.Color(204, 204, 204));
         jl_url.setText("Url");
-        getContentPane().add(jl_url, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, -1, -1));
+        getContentPane().add(jl_url, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 343, -1, -1));
 
         jt_url.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
