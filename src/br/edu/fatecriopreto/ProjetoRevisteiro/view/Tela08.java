@@ -29,7 +29,7 @@ public class Tela08 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jdpTela02 = new javax.swing.JDesktopPane();
+        jdpTelaDashboard = new javax.swing.JDesktopPane();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         jl_logoflip = new javax.swing.JLabel();
         jl_titulo = new javax.swing.JLabel();
@@ -47,36 +47,38 @@ public class Tela08 extends javax.swing.JFrame {
         jl_fundobranco1 = new javax.swing.JLabel();
         jl_fundoamarelo = new javax.swing.JLabel();
 
-        jdpTela02.setBackground(new java.awt.Color(255, 196, 0));
-        jdpTela02.setEnabled(false);
-        jdpTela02.setOpaque(false);
+        setAutoRequestFocus(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jdpTelaDashboard.setBackground(new java.awt.Color(255, 196, 0));
+        jdpTelaDashboard.setEnabled(false);
+        jdpTelaDashboard.setOpaque(false);
 
         jLayeredPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
 
-        javax.swing.GroupLayout jdpTela02Layout = new javax.swing.GroupLayout(jdpTela02);
-        jdpTela02.setLayout(jdpTela02Layout);
-        jdpTela02Layout.setHorizontalGroup(
-            jdpTela02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jdpTelaDashboardLayout = new javax.swing.GroupLayout(jdpTelaDashboard);
+        jdpTelaDashboard.setLayout(jdpTelaDashboardLayout);
+        jdpTelaDashboardLayout.setHorizontalGroup(
+            jdpTelaDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 880, Short.MAX_VALUE)
-            .addGroup(jdpTela02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jdpTela02Layout.createSequentialGroup()
+            .addGroup(jdpTelaDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jdpTelaDashboardLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 880, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
-        jdpTela02Layout.setVerticalGroup(
-            jdpTela02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jdpTelaDashboardLayout.setVerticalGroup(
+            jdpTelaDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 700, Short.MAX_VALUE)
-            .addGroup(jdpTela02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jdpTela02Layout.createSequentialGroup()
+            .addGroup(jdpTelaDashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jdpTelaDashboardLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
-        jdpTela02.setLayer(jLayeredPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jdpTelaDashboard.setLayer(jLayeredPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        setAutoRequestFocus(false);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jdpTelaDashboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jl_logoflip.setForeground(new java.awt.Color(249, 171, 24));
         jl_logoflip.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/logo-revisteiro.png"))); // NOI18N
@@ -132,6 +134,11 @@ public class Tela08 extends javax.swing.JFrame {
         jb_cliente.setContentAreaFilled(false);
         jb_cliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jb_cliente.setLabel("Cliente");
+        jb_cliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_clienteActionPerformed(evt);
+            }
+        });
         getContentPane().add(jb_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 323, -1, -1));
 
         jb_revista.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
@@ -189,20 +196,28 @@ public class Tela08 extends javax.swing.JFrame {
 
     private void jb_usuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_usuarioActionPerformed
         // TODO add your handling code here:
+        criarJanelaInternalFrameTela06();
     }//GEN-LAST:event_jb_usuarioActionPerformed
 
     private void jb_revistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_revistaActionPerformed
         // TODO add your handling code here:
+        criarJanelaInternalFrameTela04();
     }//GEN-LAST:event_jb_revistaActionPerformed
 
     private void jb_midiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_midiaActionPerformed
         // TODO add your handling code here:
+        criarJanelaInternalFrameTela05();
     }//GEN-LAST:event_jb_midiaActionPerformed
 
     private void jb_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_sairActionPerformed
         // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_jb_sairActionPerformed
+
+    private void jb_clienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_clienteActionPerformed
+        // TODO add your handling code here:
+        criarJanelaInternalFrameTela03();
+    }//GEN-LAST:event_jb_clienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -250,7 +265,7 @@ public class Tela08 extends javax.swing.JFrame {
     private javax.swing.JButton jb_revista;
     private javax.swing.JButton jb_sair;
     private javax.swing.JButton jb_usuario;
-    private javax.swing.JDesktopPane jdpTela02;
+    private javax.swing.JDesktopPane jdpTelaDashboard;
     private javax.swing.JLabel jl_fundoamarelo;
     private javax.swing.JLabel jl_fundobranco;
     private javax.swing.JLabel jl_fundobranco1;
@@ -259,4 +274,48 @@ public class Tela08 extends javax.swing.JFrame {
     private javax.swing.JLabel jl_subtitulo;
     private javax.swing.JLabel jl_titulo;
     // End of variables declaration//GEN-END:variables
+
+InternalFrameTela03 internalFrameTela03;
+InternalFrameTela04 internalFrameTela04;
+InternalFrameTela05 internalFrameTela05;
+InternalFrameTela06 internalFrameTela06;
+    
+    private void criarJanelaInternalFrameTela03() {
+        if(internalFrameTela03 == null){
+        internalFrameTela03 = new InternalFrameTela03();
+        }
+        jdpTelaDashboard.add(internalFrameTela03);
+        internalFrameTela03.setVisible(true);
+       
+    }
+    
+    private void criarJanelaInternalFrameTela04() {
+        if(internalFrameTela04 == null){
+        internalFrameTela04 = new InternalFrameTela04();
+        }
+        jdpTelaDashboard.add(internalFrameTela04);
+        internalFrameTela04.setVisible(true);
+       
+    }
+    
+     private void criarJanelaInternalFrameTela05() {
+        if(internalFrameTela05 == null){
+        internalFrameTela05 = new InternalFrameTela05();
+        }
+        jdpTelaDashboard.add(internalFrameTela05);
+        internalFrameTela04.setVisible(true);
+       
+    }
+     
+      private void criarJanelaInternalFrameTela06() {
+        if(internalFrameTela06 == null){
+        internalFrameTela06 = new InternalFrameTela06();
+        }
+        jdpTelaDashboard.add(internalFrameTela06);
+        internalFrameTela06.setVisible(true);
+       
+    }
+      
+   
+
 }
