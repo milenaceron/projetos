@@ -38,14 +38,16 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jt_nome = new javax.swing.JTextField();
         jt_contato = new javax.swing.JTextField();
         jl_contato = new javax.swing.JLabel();
-        jl_endereco = new javax.swing.JLabel();
         jt_endereco = new javax.swing.JTextField();
+        jl_endereco = new javax.swing.JLabel();
         jc_revista = new javax.swing.JComboBox();
         jl_revista = new javax.swing.JLabel();
         jb_novo = new javax.swing.JButton();
         jb_editar = new javax.swing.JButton();
         jb_deletar = new javax.swing.JButton();
         jb_salvar = new javax.swing.JButton();
+        jt_site = new javax.swing.JTextField();
+        jl_site = new javax.swing.JLabel();
         jl_fundoamarelo = new javax.swing.JLabel();
         jl_fundobranco = new javax.swing.JLabel();
 
@@ -93,38 +95,38 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jl_nome.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jl_nome.setForeground(new java.awt.Color(204, 204, 204));
         jl_nome.setText("Nome");
-        getContentPane().add(jl_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
+        getContentPane().add(jl_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, -1, -1));
 
         jt_nome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jt_nomeActionPerformed(evt);
             }
         });
-        getContentPane().add(jt_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 320, 40));
+        getContentPane().add(jt_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 320, 40));
 
         jt_contato.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jt_contatoActionPerformed(evt);
             }
         });
-        getContentPane().add(jt_contato, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, 320, 40));
+        getContentPane().add(jt_contato, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 320, 40));
 
         jl_contato.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jl_contato.setForeground(new java.awt.Color(204, 204, 204));
         jl_contato.setText("Contato");
-        getContentPane().add(jl_contato, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, -1, -1));
-
-        jl_endereco.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
-        jl_endereco.setForeground(new java.awt.Color(204, 204, 204));
-        jl_endereco.setText("Endereço");
-        getContentPane().add(jl_endereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 285, -1, -1));
+        getContentPane().add(jl_contato, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
 
         jt_endereco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jt_enderecoActionPerformed(evt);
             }
         });
-        getContentPane().add(jt_endereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 280, 320, 40));
+        getContentPane().add(jt_endereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, 320, 40));
+
+        jl_endereco.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jl_endereco.setForeground(new java.awt.Color(204, 204, 204));
+        jl_endereco.setText("Endereço");
+        getContentPane().add(jl_endereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, -1, -1));
 
         jc_revista.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         getContentPane().add(jc_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 320, 322, 25));
@@ -169,6 +171,18 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         });
         getContentPane().add(jb_salvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, -1, 60));
 
+        jt_site.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jt_siteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jt_site, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 279, 320, 40));
+
+        jl_site.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jl_site.setForeground(new java.awt.Color(204, 204, 204));
+        jl_site.setText("Site");
+        getContentPane().add(jl_site, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 285, -1, -1));
+
         jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
         jl_fundoamarelo.setOpaque(true);
         getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 495, 810, 15));
@@ -205,9 +219,12 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_jb_salvarActionPerformed
 
     private void jb_voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_voltarActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
+        // TODO add your handling code jl_site   this.dispose();
     }//GEN-LAST:event_jb_voltarActionPerformed
+
+    private void jt_siteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_siteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jt_siteActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -225,12 +242,14 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jl_logoflip;
     private javax.swing.JLabel jl_nome;
     private javax.swing.JLabel jl_revista;
+    private javax.swing.JLabel jl_site;
     private javax.swing.JLabel jl_subtitulo;
     private javax.swing.JLabel jl_titulo;
     private javax.swing.JLabel jl_voltar;
     private javax.swing.JTextField jt_contato;
     private javax.swing.JTextField jt_endereco;
     private javax.swing.JTextField jt_nome;
+    private javax.swing.JTextField jt_site;
     private br.edu.fatecriopreto.ProjetoRevisteiro.view.Tela02 tela021;
     // End of variables declaration//GEN-END:variables
 
