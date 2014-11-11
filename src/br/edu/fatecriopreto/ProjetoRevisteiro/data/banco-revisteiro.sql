@@ -16,7 +16,7 @@ create table usuarios(
 		cpf             varchar(12)	not null 	unique,
 		login           varchar(50)	not null,
 		senha		varchar(15)	not null,
-		conf_senha	varchar(15)	not null,
+		confsenha	varchar(15)	not null,
 		foreign key(id)	references	pessoas(id));
 
 
