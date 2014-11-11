@@ -1,63 +1,12 @@
 create database revisteiro;
 use revisteiro;
 
--- create table ufs(
--- 		sigla	char(2)		not null	primary key,
---		nome	varchar(50)	not null);
-
--- insert into ufs(sigla, nome) values ('SP', 'SAO PAULO');
--- insert into ufs(sigla, nome) values ('RJ', 'RIO DE JANEIRO');
--- insert into ufs(sigla, nome) values ('MG', 'MINAS GERAIS');
-
--- create table cidades(
--- 		id              int             not null	primary key	auto_increment,
--- 		nome		varchar(50)	not null,
--- 		uf_sigla	char(2)		not null,
--- 		foreign key(uf_sigla)		references ufs(sigla));
-
--- insert into cidades(nome, uf_sigla) values('ARARAS', 'SP');
--- insert into cidades(nome, uf_sigla) values('CABO FRIO', 'RJ');
--- insert into cidades(nome, uf_sigla) values('BELO HORIZONTE', 'MG');
---select * from cidades;
-
--- insert into pessoas(nome, cidade_id) values('RAPHAEL FREIRE', 1);
--- insert into pessoas(nome, cidade_id) values('JULIANA FREITAS', 2);
--- insert into pessoas(nome, cidade_id) values('SANDRA MACHADO', 3);
---select * from pessoas;
-
--- create table telefones(
--- 		pessoa_id	int             not null,
--- 		numero		varchar(10)	not null,
--- 		primary key(pessoa_id, numero),
--- 		foreign key(pessoa_id) 	references pessoas(id));
-
-
--- insert into telefones(pessoa_id, numero) values (1 , '(17)3033-6053');
--- insert into telefones(pessoa_id, numero) values (1 , '(17)99224-2020');
--- insert into telefones(pessoa_id, numero) values (2 , '(19)3352-5510');
--- insert into telefones(pessoa_id, numero) values (2 , '(19)99933-2121');
--- insert into telefones(pessoa_id, numero) values (3 , '(19)62933-2121');
--- select * from telefones;
-
-
--- create table emails(
--- 		pessoa_id		int 		not null,
--- 		endereco		varchar(100)	not null,
--- 		primary key(pessoa_id, endereco),
--- 		foreign key(pessoa_id)	references pessoas(id));
-
-
--- insert into emails(pessoa_id, endereco) values(1, 'RAPHAELMACHADOFREIRE@GMAIL.COM');
--- insert into emails(pessoa_id, endereco) values(2, 'JUFREI@GMAIL.COM');
--- insert into emails(pessoa_id, endereco) values(3, 'SANDRA@GMAIL.COM');
--- select * from emails;
-
 create table pessoas(
-		id              int             not null	primary key	auto_increment,
+		id              int             not null    primary key	auto_increment,
 		nome		varchar(100)	not null,
 		cidade          varchar(50)	not null,
                 uf              char(2)         not null,
-                numero          varchar(10)     not null,
+                telefone        varchar(10)     not null,
                 email           varchar(100)    not null);
 
 
