@@ -48,13 +48,13 @@ create table clientes_revistas(
 create table edicoes(
 		id                  int 	not null    primary key,
 		numero              int		not null,
-		data_edicoes        datetime    not null,
+		dataedicao          datetime    not null,
 		revista_id          int 	not null,
 		foreign key(revista_id)		references revistas(id));
 	
 
 create table uploads(
-		cliente_id	int 	not null,
+		cliente_id	int             not null,
 		edicao_id	int             not null,
 		usuario_id	int             not null,
 		nome		varchar(50)	not null,
