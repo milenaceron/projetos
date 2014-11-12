@@ -51,4 +51,36 @@ public class Cliente extends Pessoa {
 
     }
 
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setSite(String site) {
+        this.site = site;
+    }
+
+    public String getSite() {
+        return site;
+    }
+    
+    public void setRevista(String revista){
+        this.revista = revista;
+    }
+    
+    public String getRevista(){
+        return revista;
+    }
+
 }
