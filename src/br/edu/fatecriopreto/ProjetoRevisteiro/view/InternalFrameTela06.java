@@ -44,10 +44,10 @@ public class InternalFrameTela06 extends javax.swing.JInternalFrame {
         jt_login = new javax.swing.JTextField();
         jt_cargo = new javax.swing.JTextField();
         jl_cargo = new javax.swing.JLabel();
+        jt_nome = new javax.swing.JTextField();
         jl_nome = new javax.swing.JLabel();
         jl_fundoamarelo = new javax.swing.JLabel();
         jl_fundobranco = new javax.swing.JLabel();
-        jt_nome = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setVisible(true);
@@ -161,6 +161,13 @@ public class InternalFrameTela06 extends javax.swing.JInternalFrame {
         jl_cargo.setText("Cargo");
         getContentPane().add(jl_cargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, -1, -1));
 
+        jt_nome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jt_nomeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jt_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 190, 320, 40));
+
         jl_nome.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jl_nome.setForeground(new java.awt.Color(204, 204, 204));
         jl_nome.setText("Nome");
@@ -173,13 +180,6 @@ public class InternalFrameTela06 extends javax.swing.JInternalFrame {
         jl_fundobranco.setBackground(new java.awt.Color(255, 255, 255));
         jl_fundobranco.setOpaque(true);
         getContentPane().add(jl_fundobranco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 510));
-
-        jt_nome.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jt_nomeActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jt_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 190, 320, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
