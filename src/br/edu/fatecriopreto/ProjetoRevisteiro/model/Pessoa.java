@@ -52,4 +52,43 @@ public class Pessoa {
 
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
+
+    public String getUf() {
+        return uf;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
+    }
 }
