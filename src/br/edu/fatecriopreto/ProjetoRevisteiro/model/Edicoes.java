@@ -40,4 +40,19 @@ public class Edicoes {
 
     }
 
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setDataedicao(String dataedicao) {
+        this.dataedicao = dataedicao;
+    }
+
+    public String getDataedicao() {
+        return dataedicao;
+    }
 }

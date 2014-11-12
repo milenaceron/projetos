@@ -36,4 +36,20 @@ public class Upload {
         urlarquivo = JOptionPane.showInputDialog("Digite a url do arquivo: ");
 
     }
+
+    public void setNomearquivo(String nomearquivo) {
+        this.nomearquivo = nomearquivo;
+    }
+
+    public String getNomearquivo() {
+        return nomearquivo;
+    }
+
+    public void setUrlarquivo(String urlarquivo) {
+        this.urlarquivo = urlarquivo;
+    }
+
+    public String getUrlarquivo() {
+        return urlarquivo;
+    }
 }
