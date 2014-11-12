@@ -18,7 +18,7 @@ public class Conexao {
     public Conexao() throws Exception {
         String url = "jdbc:mysql://localhost:3306/revisteiro?zeroDateTimeBehavior=convertToNull";
         Class.forName("com.mysql.jdbc.Driver");
-        con = DriverManager.getConnection(url, "root", "");
+        con = DriverManager.getConnection(url, "root","");
     }
 
     public Connection getConexao() {
