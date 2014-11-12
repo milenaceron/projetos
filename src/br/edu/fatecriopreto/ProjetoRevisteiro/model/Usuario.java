@@ -51,4 +51,36 @@ public class Usuario extends Pessoa {
 
     }
 
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setConfsenha(String confsenha) {
+        this.confsenha = confsenha;
+    }
+
+    public String getConfsenha() {
+        return confsenha;
+    }
+
 }
