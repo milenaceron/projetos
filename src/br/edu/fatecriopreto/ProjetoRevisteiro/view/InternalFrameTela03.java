@@ -219,7 +219,8 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_jb_salvarActionPerformed
 
     private void jb_voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_voltarActionPerformed
-        // TODO add your handling code jl_site   this.dispose();
+        // TODO add your handling code jl_site
+        this.dispose();
     }//GEN-LAST:event_jb_voltarActionPerformed
 
     private void jt_siteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_siteActionPerformed
