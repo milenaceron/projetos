@@ -5,17 +5,23 @@
  */
 package br.edu.fatecriopreto.ProjetoRevisteiro.view;
 
+import br.edu.fatecriopreto.ProjetoRevisteiro.model.Cliente;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author raphaelmachado
  */
 public class InternalFrameTela03 extends javax.swing.JInternalFrame {
 
+    private Cliente obj;
+
     /**
      * Creates new form InternalFrameTela02
      */
     public InternalFrameTela03() {
         initComponents();
+        obj = new Cliente();
     }
 
     /**
@@ -139,6 +145,11 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jb_novo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-novo.png"))); // NOI18N
         jb_novo.setBorderPainted(false);
         jb_novo.setContentAreaFilled(false);
+        jb_novo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_novoActionPerformed(evt);
+            }
+        });
         getContentPane().add(jb_novo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, -1, -1));
 
         jb_editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-editar.png"))); // NOI18N
@@ -216,6 +227,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
 
     private void jb_salvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_salvarActionPerformed
         // TODO add your handling code here:
+
     }//GEN-LAST:event_jb_salvarActionPerformed
 
     private void jb_voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_voltarActionPerformed
@@ -226,6 +238,17 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
     private void jt_siteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_siteActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jt_siteActionPerformed
+
+    private void jb_novoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_novoActionPerformed
+        // TODO add your handling code here:
+
+        limparCampos();
+        tratarCampos(true);
+        jb_deletar.setEnabled(false);
+        jb_editar.setEnabled(false);
+        jb_salvar.setEnabled(true);
+
+    }//GEN-LAST:event_jb_novoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -254,5 +277,58 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
     private br.edu.fatecriopreto.ProjetoRevisteiro.view.Tela02 tela021;
     // End of variables declaration//GEN-END:variables
 
-    
+    private void limparCampos() {
+        jt_nome.setText(null);
+        jt_contato.setText(null);
+        jt_endereco.setText(null);
+        jt_site.setText(null);
+        //   jc_revista  perguntar para professora
+    }
+
+    private void tratarCampos(boolean b) {
+        jt_nome.setEditable(b);
+        jt_contato.setEditable(b);
+        jt_endereco.setEditable(b);
+        jt_site.setEditable(b);
+    }
+
+    private boolean validarCampos() {
+        if (jt_nome.getText().equals("")) {
+
+            JOptionPane.showMessageDialog(this, "Digite o nome: ");
+            jt_nome.requestFocus();
+            return false;
+        }
+
+        if (jt_contato.getText().equals("")) {
+
+            JOptionPane.showMessageDialog(this, "Digite o contato: ");
+            jt_contato.requestFocus();
+            return false;
+        }
+
+        if (jt_endereco.getText().equals("")) {
+
+            JOptionPane.showMessageDialog(this, "Digite o endereço: ");
+            jt_endereco.requestFocus();
+            return false;
+        }
+
+        if (jt_site.getText().equals("")) {
+
+            JOptionPane.showMessageDialog(this, "Digite o site: ");
+            jt_site.requestFocus();
+            return false;
+        }
+        return true;
+    }
+
+    private boolean preencherObjeto() throws Exception {
+        obj.setNome(jt_nome.getText());
+        obj.setContato(jt_contato.getText());
+        obj.setEndereco(jt_endereco.getText());
+        obj.setSite(jt_site.getText());
+        return true;
+
+    }
 }
