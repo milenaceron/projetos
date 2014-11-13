@@ -42,8 +42,8 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jl_nome = new javax.swing.JLabel();
         jt_nome = new javax.swing.JTextField();
-        jt_contato = new javax.swing.JTextField();
-        jl_contato = new javax.swing.JLabel();
+        jt_telefone = new javax.swing.JTextField();
+        jl_telefone = new javax.swing.JLabel();
         jt_endereco = new javax.swing.JTextField();
         jl_endereco = new javax.swing.JLabel();
         jc_revista = new javax.swing.JComboBox();
@@ -54,6 +54,12 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jb_salvar = new javax.swing.JButton();
         jt_site = new javax.swing.JTextField();
         jl_site = new javax.swing.JLabel();
+        jt_cnpj = new javax.swing.JTextField();
+        jl_cnpj = new javax.swing.JLabel();
+        jt_uf = new javax.swing.JTextField();
+        jl_uf = new javax.swing.JLabel();
+        jl_cidade = new javax.swing.JLabel();
+        jt_cidade = new javax.swing.JTextField();
         jl_fundoamarelo = new javax.swing.JLabel();
         jl_fundobranco = new javax.swing.JLabel();
 
@@ -110,37 +116,37 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         });
         getContentPane().add(jt_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 320, 40));
 
-        jt_contato.addActionListener(new java.awt.event.ActionListener() {
+        jt_telefone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jt_contatoActionPerformed(evt);
+                jt_telefoneActionPerformed(evt);
             }
         });
-        getContentPane().add(jt_contato, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 320, 40));
+        getContentPane().add(jt_telefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 239, 320, 40));
 
-        jl_contato.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
-        jl_contato.setForeground(new java.awt.Color(204, 204, 204));
-        jl_contato.setText("Contato");
-        getContentPane().add(jl_contato, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
+        jl_telefone.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jl_telefone.setForeground(new java.awt.Color(204, 204, 204));
+        jl_telefone.setText("Fone");
+        getContentPane().add(jl_telefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, -1, -1));
 
         jt_endereco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jt_enderecoActionPerformed(evt);
             }
         });
-        getContentPane().add(jt_endereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, 320, 40));
+        getContentPane().add(jt_endereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 280, 320, 40));
 
         jl_endereco.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jl_endereco.setForeground(new java.awt.Color(204, 204, 204));
         jl_endereco.setText("Endereço");
-        getContentPane().add(jl_endereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, -1, -1));
+        getContentPane().add(jl_endereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, -1, -1));
 
         jc_revista.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        getContentPane().add(jc_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 320, 322, 25));
+        getContentPane().add(jc_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 400, 322, 25));
 
         jl_revista.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jl_revista.setForeground(new java.awt.Color(204, 204, 204));
         jl_revista.setText("Revista");
-        getContentPane().add(jl_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, -1, -1));
+        getContentPane().add(jl_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 400, -1, -1));
 
         jb_novo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-novo.png"))); // NOI18N
         jb_novo.setBorderPainted(false);
@@ -150,7 +156,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
                 jb_novoActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_novo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, -1, -1));
+        getContentPane().add(jb_novo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, -1, -1));
 
         jb_editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-editar.png"))); // NOI18N
         jb_editar.setBorderPainted(false);
@@ -160,7 +166,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
                 jb_editarActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, -1, 60));
+        getContentPane().add(jb_editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 450, -1, 60));
 
         jb_deletar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-deletar.png"))); // NOI18N
         jb_deletar.setBorderPainted(false);
@@ -170,7 +176,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
                 jb_deletarActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_deletar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, -1, 60));
+        getContentPane().add(jb_deletar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 450, -1, 60));
 
         jb_salvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-salvar.png"))); // NOI18N
         jb_salvar.setBorderPainted(false);
@@ -180,27 +186,64 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
                 jb_salvarActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_salvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, -1, 60));
+        getContentPane().add(jb_salvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 450, -1, 60));
 
         jt_site.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jt_siteActionPerformed(evt);
             }
         });
-        getContentPane().add(jt_site, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 279, 320, 40));
+        getContentPane().add(jt_site, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 358, 320, 40));
 
         jl_site.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jl_site.setForeground(new java.awt.Color(204, 204, 204));
         jl_site.setText("Site");
-        getContentPane().add(jl_site, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 285, -1, -1));
+        getContentPane().add(jl_site, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 364, -1, -1));
+
+        jt_cnpj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jt_cnpjActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jt_cnpj, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 199, 320, 40));
+
+        jl_cnpj.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jl_cnpj.setForeground(new java.awt.Color(204, 204, 204));
+        jl_cnpj.setText("Cnpj");
+        getContentPane().add(jl_cnpj, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
+        jl_cnpj.getAccessibleContext().setAccessibleName("CNPJ");
+
+        jt_uf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jt_ufActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jt_uf, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 320, 70, 40));
+
+        jl_uf.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jl_uf.setForeground(new java.awt.Color(204, 204, 204));
+        jl_uf.setText("UF");
+        getContentPane().add(jl_uf, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 330, -1, -1));
+
+        jl_cidade.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
+        jl_cidade.setForeground(new java.awt.Color(204, 204, 204));
+        jl_cidade.setText("Cidade");
+        getContentPane().add(jl_cidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 330, -1, -1));
+
+        jt_cidade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jt_cidadeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jt_cidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 320, 200, 40));
 
         jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
         jl_fundoamarelo.setOpaque(true);
-        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 495, 810, 15));
+        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 540, 810, 15));
 
         jl_fundobranco.setBackground(new java.awt.Color(255, 255, 255));
         jl_fundobranco.setOpaque(true);
-        getContentPane().add(jl_fundobranco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 510));
+        getContentPane().add(jl_fundobranco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 540));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -209,9 +252,9 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jt_nomeActionPerformed
 
-    private void jt_contatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_contatoActionPerformed
+    private void jt_telefoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_telefoneActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jt_contatoActionPerformed
+    }//GEN-LAST:event_jt_telefoneActionPerformed
 
     private void jt_enderecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_enderecoActionPerformed
         // TODO add your handling code here:
@@ -250,6 +293,18 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
 
     }//GEN-LAST:event_jb_novoActionPerformed
 
+    private void jt_cnpjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_cnpjActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jt_cnpjActionPerformed
+
+    private void jt_ufActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_ufActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jt_ufActionPerformed
+
+    private void jt_cidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_cidadeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jt_cidadeActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JSeparator jSeparator1;
@@ -259,7 +314,8 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
     private javax.swing.JButton jb_salvar;
     private javax.swing.JButton jb_voltar;
     private javax.swing.JComboBox jc_revista;
-    private javax.swing.JLabel jl_contato;
+    private javax.swing.JLabel jl_cidade;
+    private javax.swing.JLabel jl_cnpj;
     private javax.swing.JLabel jl_endereco;
     private javax.swing.JLabel jl_fundoamarelo;
     private javax.swing.JLabel jl_fundobranco;
@@ -268,26 +324,34 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jl_revista;
     private javax.swing.JLabel jl_site;
     private javax.swing.JLabel jl_subtitulo;
+    private javax.swing.JLabel jl_telefone;
     private javax.swing.JLabel jl_titulo;
+    private javax.swing.JLabel jl_uf;
     private javax.swing.JLabel jl_voltar;
-    private javax.swing.JTextField jt_contato;
+    private javax.swing.JTextField jt_cidade;
+    private javax.swing.JTextField jt_cnpj;
     private javax.swing.JTextField jt_endereco;
     private javax.swing.JTextField jt_nome;
     private javax.swing.JTextField jt_site;
+    private javax.swing.JTextField jt_telefone;
+    private javax.swing.JTextField jt_uf;
     private br.edu.fatecriopreto.ProjetoRevisteiro.view.Tela02 tela021;
     // End of variables declaration//GEN-END:variables
 
     private void limparCampos() {
         jt_nome.setText(null);
-        jt_contato.setText(null);
+        jt_cnpj.setText(null);
+        jt_telefone.setText(null);
         jt_endereco.setText(null);
+        jt_cidade.setText(null);
+        jt_uf.setText(null);
         jt_site.setText(null);
         //   jc_revista  perguntar para professora
     }
 
     private void tratarCampos(boolean b) {
         jt_nome.setEditable(b);
-        jt_contato.setEditable(b);
+        jt_telefone.setEditable(b);
         jt_endereco.setEditable(b);
         jt_site.setEditable(b);
     }
@@ -300,10 +364,10 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
             return false;
         }
 
-        if (jt_contato.getText().equals("")) {
+        if (jt_telefone.getText().equals("")) {
 
             JOptionPane.showMessageDialog(this, "Digite o contato: ");
-            jt_contato.requestFocus();
+            jt_telefone.requestFocus();
             return false;
         }
 
@@ -325,7 +389,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
 
     private boolean preencherObjeto() throws Exception {
         obj.setNome(jt_nome.getText());
-        obj.setContato(jt_contato.getText());
+        obj.setTelefone(jt_telefone.getText());
         obj.setEndereco(jt_endereco.getText());
         obj.setSite(jt_site.getText());
         return true;
