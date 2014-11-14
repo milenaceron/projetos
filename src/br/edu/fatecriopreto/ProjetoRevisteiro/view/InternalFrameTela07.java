@@ -27,7 +27,6 @@ public class InternalFrameTela07 extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        tela021 = new br.edu.fatecriopreto.ProjetoRevisteiro.view.Tela02();
         jb_fechar = new javax.swing.JButton();
         jb_revista = new javax.swing.JButton();
         jb_sair = new javax.swing.JButton();
@@ -132,7 +131,6 @@ public class InternalFrameTela07 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jl_fundobranco;
     private javax.swing.JPasswordField jp_senha;
     private javax.swing.JTextField jt_login;
-    private br.edu.fatecriopreto.ProjetoRevisteiro.view.Tela02 tela021;
     // End of variables declaration//GEN-END:variables
 
 }
