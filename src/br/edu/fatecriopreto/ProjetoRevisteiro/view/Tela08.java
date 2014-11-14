@@ -303,7 +303,7 @@ InternalFrameTela06 internalFrameTela06;
         internalFrameTela05 = new InternalFrameTela05();
         }
         jdpTelaDashboard.add(internalFrameTela05);
-        internalFrameTela04.setVisible(true);
+        internalFrameTela05.setVisible(true);
        
     }
      
