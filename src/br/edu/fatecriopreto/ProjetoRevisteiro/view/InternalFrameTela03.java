@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  * @author raphaelmachado
  */
 public class InternalFrameTela03 extends javax.swing.JInternalFrame {
-
+    
     private Cliente obj;
 
     /**
@@ -139,7 +139,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jl_endereco.setText("Endereço");
         getContentPane().add(jl_endereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, -1, -1));
 
-        jc_revista.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jc_revista.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione" }));
         getContentPane().add(jc_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 400, 322, 25));
 
         jl_revista.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
@@ -344,53 +344,92 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jt_cidade.setText(null);
         jt_uf.setText(null);
         jt_site.setText(null);
-        //   jc_revista  perguntar para professora
+        jc_revista.setSelectedIndex(0);
+//   jc_revista  perguntar para professora
     }
-
+    
     private void tratarCampos(boolean b) {
         jt_nome.setEditable(b);
+        jt_cnpj.setEditable(b);
         jt_telefone.setEditable(b);
         jt_endereco.setEditable(b);
+        jt_cidade.setEditable(b);
+        jt_uf.setEditable(b);
         jt_site.setEditable(b);
+        jc_revista.setSelectedIndex(0);
     }
-
+    
     private boolean validarCampos() {
         if (jt_nome.getText().equals("")) {
-
+            
             JOptionPane.showMessageDialog(this, "Digite o nome: ");
             jt_nome.requestFocus();
             return false;
         }
-
+        
+        if (jt_cnpj.getText().equals("")) {
+            
+            JOptionPane.showMessageDialog(this, "");
+            jt_cnpj.requestFocus();
+            return false;
+            
+        }
+        
         if (jt_telefone.getText().equals("")) {
-
+            
             JOptionPane.showMessageDialog(this, "Digite o contato: ");
             jt_telefone.requestFocus();
             return false;
         }
-
+        
         if (jt_endereco.getText().equals("")) {
-
+            
             JOptionPane.showMessageDialog(this, "Digite o endereço: ");
             jt_endereco.requestFocus();
             return false;
         }
-
+        
+        if (jt_cidade.getText().equals("")) {
+            JOptionPane.showMessageDialog(this, "Digite a cidade: ");
+            jt_cidade.requestFocus();
+            return false;
+        }
+        
+        if (jt_uf.getText().equals("")) {
+            JOptionPane.showMessageDialog(this, "Digite a UF: ");
+            jt_uf.requestFocus();
+            return false;
+            
+        }
+        
         if (jt_site.getText().equals("")) {
-
+            
             JOptionPane.showMessageDialog(this, "Digite o site: ");
             jt_site.requestFocus();
             return false;
         }
+        
+        if(jc_revista.getSelectedIndex() == 0){
+            
+            JOptionPane.showMessageDialog(this, "Escolha a revista: ");
+            jc_revista.requestFocus();
+            return false;
+        
+        }
+        
         return true;
     }
-
+    
     private boolean preencherObjeto() throws Exception {
         obj.setNome(jt_nome.getText());
+        obj.setCnpj(jt_cnpj.getText());
         obj.setTelefone(jt_telefone.getText());
         obj.setEndereco(jt_endereco.getText());
+        obj.setCidade(jt_cidade.getText());
+        obj.setUf(jt_uf.getText());
         obj.setSite(jt_site.getText());
+       // obj.setRevista(jc_revista.setSelectedIndex());
         return true;
-
+        
     }
 }
