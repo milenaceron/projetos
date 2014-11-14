@@ -27,7 +27,6 @@ public class InternalFrameTela02 extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        tela021 = new br.edu.fatecriopreto.ProjetoRevisteiro.view.Tela02();
         jl_logoflip = new javax.swing.JLabel();
         jl_voltar = new javax.swing.JLabel();
         jb_voltar = new javax.swing.JButton();
@@ -190,7 +189,6 @@ public class InternalFrameTela02 extends javax.swing.JInternalFrame {
     private javax.swing.JScrollPane js_arquivo;
     private javax.swing.JScrollPane js_categoria;
     private javax.swing.JScrollPane js_descricao;
-    private br.edu.fatecriopreto.ProjetoRevisteiro.view.Tela02 tela021;
     // End of variables declaration//GEN-END:variables
 
     
