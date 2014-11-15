@@ -13,9 +13,9 @@ import javax.swing.JOptionPane;
  * @author raphaelmachado
  */
 public class InternalFrameTela03 extends javax.swing.JInternalFrame {
-    
+
     ClienteData DAO;
-    
+
     private Cliente obj;
 
     /**
@@ -71,9 +71,11 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jl_fundobranco = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
+        setPreferredSize(new java.awt.Dimension(834, 556));
         setVisible(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jt_nome.setEnabled(false);
         jt_nome.setNextFocusableComponent(jt_cnpj);
         jt_nome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,6 +84,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         });
         getContentPane().add(jt_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 320, 40));
 
+        jt_cnpj.setEnabled(false);
         jt_cnpj.setNextFocusableComponent(jt_telefone);
         jt_cnpj.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,6 +93,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         });
         getContentPane().add(jt_cnpj, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 320, 40));
 
+        jt_telefone.setEnabled(false);
         jt_telefone.setNextFocusableComponent(jt_endereco);
         jt_telefone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,6 +102,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         });
         getContentPane().add(jt_telefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, 320, 40));
 
+        jt_endereco.setEnabled(false);
         jt_endereco.setNextFocusableComponent(jt_cidade);
         jt_endereco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,6 +111,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         });
         getContentPane().add(jt_endereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 280, 320, 40));
 
+        jt_cidade.setEnabled(false);
         jt_cidade.setNextFocusableComponent(jt_uf);
         jt_cidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,6 +120,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         });
         getContentPane().add(jt_cidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 320, 200, 40));
 
+        jt_uf.setEnabled(false);
         jt_uf.setNextFocusableComponent(jt_site);
         jt_uf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,15 +129,17 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         });
         getContentPane().add(jt_uf, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 320, 70, 40));
 
+        jt_site.setEnabled(false);
         jt_site.setNextFocusableComponent(jc_revista);
         jt_site.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jt_siteActionPerformed(evt);
             }
         });
-        getContentPane().add(jt_site, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 358, 320, 40));
+        getContentPane().add(jt_site, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 360, 320, 40));
 
         jc_revista.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione" }));
+        jc_revista.setEnabled(false);
         jc_revista.setNextFocusableComponent(jt_nome);
         getContentPane().add(jc_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 400, 322, 25));
 
@@ -196,7 +205,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jl_uf.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jl_uf.setForeground(new java.awt.Color(204, 204, 204));
         jl_uf.setText("UF");
-        getContentPane().add(jl_uf, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 330, -1, -1));
+        getContentPane().add(jl_uf, new org.netbeans.lib.awtextra.AbsoluteConstraints(538, 330, -1, -1));
 
         jl_site.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jl_site.setForeground(new java.awt.Color(204, 204, 204));
@@ -212,6 +221,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jb_cancelar.setToolTipText("Cancelar");
         jb_cancelar.setBorderPainted(false);
         jb_cancelar.setContentAreaFilled(false);
+        jb_cancelar.setEnabled(false);
         jb_cancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_cancelarActionPerformed(evt);
@@ -234,6 +244,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jb_editar.setToolTipText("Editar");
         jb_editar.setBorderPainted(false);
         jb_editar.setContentAreaFilled(false);
+        jb_editar.setEnabled(false);
         jb_editar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_editarActionPerformed(evt);
@@ -245,6 +256,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jb_deletar.setToolTipText("Apagar");
         jb_deletar.setBorderPainted(false);
         jb_deletar.setContentAreaFilled(false);
+        jb_deletar.setEnabled(false);
         jb_deletar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_deletarActionPerformed(evt);
@@ -256,6 +268,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jb_salvar.setToolTipText("Salvar");
         jb_salvar.setBorderPainted(false);
         jb_salvar.setContentAreaFilled(false);
+        jb_salvar.setEnabled(false);
         jb_salvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jb_salvarActionPerformed(evt);
@@ -288,7 +301,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
 
     private void jb_editarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_editarActionPerformed
         // TODO add your handling code here:
-        
+
         limparCampos();
         tratarCampos(true);
         jb_novo.setEnabled(false);
@@ -300,7 +313,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
 
     private void jb_deletarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deletarActionPerformed
         // TODO add your handling code here:
-        
+
         limparCampos();
         tratarCampos(true);
         jb_novo.setEnabled(true);
@@ -312,15 +325,37 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
 
     private void jb_salvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_salvarActionPerformed
         // TODO add your handling code here:
+
+        try {
+            //validar campos
+            if (validarCampos()) {
+                if (preencherObjeto()) { //preencher objeto
+                    if (DAO.incluir(obj)) { //incluir obj no bd
+                        JOptionPane.showMessageDialog(this,
+                                "Salvo com sucesso");
+                        jb_cancelarActionPerformed(evt);
+                        
+                        jb_novo.setEnabled(true);
+                        jb_deletar.setEnabled(false);
+                        jb_editar.setEnabled(false);
+                        jb_salvar.setEnabled(false);
+                        jb_cancelar.setEnabled(false);
+
+                    }
+                }
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Erro ao salvar:"
+                    + e.getMessage());
+            
+                        jb_salvar.setEnabled(true);
+                        jb_cancelar.setEnabled(true);
+            
+        }
+
+       
         
-        limparCampos();
-        tratarCampos(true);
-        jb_novo.setEnabled(true);
-        jb_deletar.setEnabled(true);
-        jb_editar.setEnabled(true);
-        jb_salvar.setEnabled(true);
-        jb_cancelar.setEnabled(true);
-        
+      
 
     }//GEN-LAST:event_jb_salvarActionPerformed
 
@@ -335,7 +370,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
 
     private void jb_novoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_novoActionPerformed
         // TODO add your handling code here:
-
+        ativarCampos(true);
         limparCampos();
         tratarCampos(true);
         jb_novo.setEnabled(false);
@@ -343,7 +378,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jb_deletar.setEnabled(false);
         jb_salvar.setEnabled(true);
         jb_cancelar.setEnabled(true);
-        
+
 
     }//GEN-LAST:event_jb_novoActionPerformed
 
@@ -365,13 +400,14 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
 
     private void jb_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_cancelarActionPerformed
         // TODO add your handling code here:
+     
         limparCampos();
-        tratarCampos(true);
+        ativarCampos(false);
         jb_novo.setEnabled(true);
-        jb_editar.setEnabled(true);
-        jb_deletar.setEnabled(true);
-        jb_salvar.setEnabled(true);
-        jb_cancelar.setEnabled(true);
+        jb_editar.setEnabled(false);
+        jb_deletar.setEnabled(false);
+        jb_salvar.setEnabled(false);
+        jb_cancelar.setEnabled(false);
     }//GEN-LAST:event_jb_cancelarActionPerformed
 
 
@@ -416,9 +452,9 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jt_uf.setText(null);
         jt_site.setText(null);
         jc_revista.setSelectedIndex(0);
-        
+
     }
-    
+
     private void tratarCampos(boolean b) {
         jt_nome.setEditable(b);
         jt_cnpj.setEditable(b);
@@ -429,68 +465,79 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jt_site.setEditable(b);
         jc_revista.setEnabled(b);
     }
-    
+
+    private void ativarCampos(boolean b) {
+        jt_nome.setEnabled(b);
+        jt_cnpj.setEnabled(b);
+        jt_telefone.setEnabled(b);
+        jt_endereco.setEnabled(b);
+        jt_cidade.setEnabled(b);
+        jt_uf.setEnabled(b);
+        jt_site.setEnabled(b);
+        jc_revista.setEnabled(b);
+
+    }
+
     private boolean validarCampos() {
         if (jt_nome.getText().equals("")) {
-            
+
             JOptionPane.showMessageDialog(this, "Digite o nome: ");
             jt_nome.requestFocus();
             return false;
         }
-        
+
         if (jt_cnpj.getText().equals("")) {
-            
-            JOptionPane.showMessageDialog(this, "");
+
+            JOptionPane.showMessageDialog(this, "Digite o cnpj: ");
             jt_cnpj.requestFocus();
             return false;
-            
+
         }
-        
+
         if (jt_telefone.getText().equals("")) {
-            
+
             JOptionPane.showMessageDialog(this, "Digite o contato: ");
             jt_telefone.requestFocus();
             return false;
         }
-        
+
         if (jt_endereco.getText().equals("")) {
-            
+
             JOptionPane.showMessageDialog(this, "Digite o endereço: ");
             jt_endereco.requestFocus();
             return false;
         }
-        
+
         if (jt_cidade.getText().equals("")) {
             JOptionPane.showMessageDialog(this, "Digite a cidade: ");
             jt_cidade.requestFocus();
             return false;
         }
-        
+
         if (jt_uf.getText().equals("")) {
             JOptionPane.showMessageDialog(this, "Digite a UF: ");
             jt_uf.requestFocus();
             return false;
-            
+
         }
-        
+
         if (jt_site.getText().equals("")) {
-            
+
             JOptionPane.showMessageDialog(this, "Digite o site: ");
             jt_site.requestFocus();
             return false;
         }
-        
-        if (jc_revista.getSelectedIndex() == 0) {
-            
-            JOptionPane.showMessageDialog(this, "Escolha a revista: ");
-            jc_revista.requestFocus();
-            return false;
-            
-        }
-        
+
+//        if (jc_revista.getSelectedIndex() == 0) {
+//            
+//            JOptionPane.showMessageDialog(this, "Escolha a revista: ");
+//            jc_revista.requestFocus();
+//            return false;
+//            
+//        }
         return true;
     }
-    
+
     private boolean preencherObjeto() throws Exception {
         obj.setNome(jt_nome.getText());
         obj.setCnpj(jt_cnpj.getText());
@@ -501,6 +548,6 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         obj.setSite(jt_site.getText());
         //obj.setRevista(jc_revista.getSelectedItem().toString;
         return true;
-        
+
     }
 }
