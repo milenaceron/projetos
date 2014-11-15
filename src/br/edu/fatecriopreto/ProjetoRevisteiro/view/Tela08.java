@@ -93,14 +93,14 @@ public class Tela08 extends javax.swing.JFrame {
 
         jSeparator1.setBackground(new java.awt.Color(204, 204, 204));
         jSeparator1.setForeground(new java.awt.Color(204, 204, 204));
-        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 101, 630, 10));
+        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 101, 653, 10));
 
         jl_subtitulo.setBackground(new java.awt.Color(204, 204, 204));
         jl_subtitulo.setFont(new java.awt.Font("Myriad Pro", 1, 30)); // NOI18N
         jl_subtitulo.setForeground(new java.awt.Color(204, 204, 204));
         jl_subtitulo.setText("Dashboard");
         jl_subtitulo.setPreferredSize(new java.awt.Dimension(100, 50));
-        getContentPane().add(jl_subtitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 125, 410, 50));
+        getContentPane().add(jl_subtitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, 410, 50));
 
         jb_usuario.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jb_usuario.setForeground(new java.awt.Color(153, 153, 153));
@@ -139,7 +139,7 @@ public class Tela08 extends javax.swing.JFrame {
                 jb_clienteActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 323, -1, -1));
+        getContentPane().add(jb_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 324, -1, -1));
 
         jb_revista.setFont(new java.awt.Font("Myriad Pro", 1, 24)); // NOI18N
         jb_revista.setForeground(new java.awt.Color(153, 153, 153));
@@ -167,7 +167,7 @@ public class Tela08 extends javax.swing.JFrame {
 
         jl_imagem_fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/imagem-dashboard.png"))); // NOI18N
         jLayeredPane2.add(jl_imagem_fundo);
-        jl_imagem_fundo.setBounds(210, 170, 650, 420);
+        jl_imagem_fundo.setBounds(213, 170, 650, 420);
 
         jb_sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-sair-preto.png"))); // NOI18N
         jb_sair.setBorderPainted(false);
@@ -178,7 +178,7 @@ public class Tela08 extends javax.swing.JFrame {
             }
         });
         jLayeredPane2.add(jb_sair);
-        jb_sair.setBounds(810, 620, 51, 47);
+        jb_sair.setBounds(808, 625, 51, 47);
 
         getContentPane().add(jLayeredPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 700));
 
