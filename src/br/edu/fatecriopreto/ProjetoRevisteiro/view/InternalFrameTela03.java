@@ -49,7 +49,6 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jt_site = new javax.swing.JTextField();
         jc_revista = new javax.swing.JComboBox();
         jb_voltar = new javax.swing.JButton();
-        jl_voltar = new javax.swing.JLabel();
         jl_subtitulo = new javax.swing.JLabel();
         jl_logoflip = new javax.swing.JLabel();
         jl_titulo = new javax.swing.JLabel();
@@ -61,17 +60,18 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jl_uf = new javax.swing.JLabel();
         jl_site = new javax.swing.JLabel();
         jl_revista = new javax.swing.JLabel();
-        jb_cancelar = new javax.swing.JButton();
         jb_novo = new javax.swing.JButton();
         jb_editar = new javax.swing.JButton();
         jb_deletar = new javax.swing.JButton();
         jb_salvar = new javax.swing.JButton();
+        jb_cancelar = new javax.swing.JButton();
+        jb_pesquisa = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jl_fundoamarelo = new javax.swing.JLabel();
         jl_fundobranco = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(834, 556));
+        setPreferredSize(new java.awt.Dimension(800, 600));
         setVisible(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -143,7 +143,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jc_revista.setNextFocusableComponent(jt_nome);
         getContentPane().add(jc_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 400, 322, 25));
 
-        jb_voltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-voltar.png"))); // NOI18N
+        jb_voltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/google/layout/Core_Icons/unstyled/unscaled/ic_action_back.png"))); // NOI18N
         jb_voltar.setBorderPainted(false);
         jb_voltar.setContentAreaFilled(false);
         jb_voltar.addActionListener(new java.awt.event.ActionListener() {
@@ -152,11 +152,6 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
             }
         });
         getContentPane().add(jb_voltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, -1));
-
-        jl_voltar.setFont(new java.awt.Font("Myriad Pro", 1, 18)); // NOI18N
-        jl_voltar.setForeground(new java.awt.Color(153, 153, 153));
-        jl_voltar.setText("voltar");
-        getContentPane().add(jl_voltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, -1, -1));
 
         jl_subtitulo.setBackground(new java.awt.Color(204, 204, 204));
         jl_subtitulo.setFont(new java.awt.Font("Myriad Pro", 1, 30)); // NOI18N
@@ -217,19 +212,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jl_revista.setText("Revista");
         getContentPane().add(jl_revista, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 400, -1, -1));
 
-        jb_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-cancelar.png"))); // NOI18N
-        jb_cancelar.setToolTipText("Cancelar");
-        jb_cancelar.setBorderPainted(false);
-        jb_cancelar.setContentAreaFilled(false);
-        jb_cancelar.setEnabled(false);
-        jb_cancelar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jb_cancelarActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jb_cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 450, -1, 60));
-
-        jb_novo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-novo.png"))); // NOI18N
+        jb_novo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/google/layout/Core_Icons/unstyled/unscaled/ic_action_new.png"))); // NOI18N
         jb_novo.setToolTipText("Novo");
         jb_novo.setBorderPainted(false);
         jb_novo.setContentAreaFilled(false);
@@ -238,9 +221,9 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
                 jb_novoActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_novo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, -1, -1));
+        getContentPane().add(jb_novo, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 450, -1, -1));
 
-        jb_editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-editar.png"))); // NOI18N
+        jb_editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/google/layout/Core_Icons/unstyled/unscaled/ic_action_edit.png"))); // NOI18N
         jb_editar.setToolTipText("Editar");
         jb_editar.setBorderPainted(false);
         jb_editar.setContentAreaFilled(false);
@@ -250,9 +233,9 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
                 jb_editarActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 450, -1, 60));
+        getContentPane().add(jb_editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 450, -1, 60));
 
-        jb_deletar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-deletar.png"))); // NOI18N
+        jb_deletar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/google/layout/Core_Icons/unstyled/unscaled/ic_action_delete.png"))); // NOI18N
         jb_deletar.setToolTipText("Apagar");
         jb_deletar.setBorderPainted(false);
         jb_deletar.setContentAreaFilled(false);
@@ -262,9 +245,9 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
                 jb_deletarActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_deletar, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 448, -1, 60));
+        getContentPane().add(jb_deletar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 450, -1, 60));
 
-        jb_salvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/img/botao-salvar.png"))); // NOI18N
+        jb_salvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/google/layout/Core_Icons/unstyled/unscaled/ic_action_save.png"))); // NOI18N
         jb_salvar.setToolTipText("Salvar");
         jb_salvar.setBorderPainted(false);
         jb_salvar.setContentAreaFilled(false);
@@ -274,7 +257,30 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
                 jb_salvarActionPerformed(evt);
             }
         });
-        getContentPane().add(jb_salvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 449, -1, 60));
+        getContentPane().add(jb_salvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 450, -1, 60));
+
+        jb_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/google/layout/Core_Icons/unstyled/unscaled/ic_action_cancel.png"))); // NOI18N
+        jb_cancelar.setToolTipText("Cancelar");
+        jb_cancelar.setBorderPainted(false);
+        jb_cancelar.setContentAreaFilled(false);
+        jb_cancelar.setEnabled(false);
+        jb_cancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_cancelarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jb_cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 450, -1, 60));
+
+        jb_pesquisa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/fatecriopreto/ProjetoRevisteiro/google/layout/Core_Icons/unstyled/unscaled/ic_action_search.png"))); // NOI18N
+        jb_pesquisa.setToolTipText("Novo");
+        jb_pesquisa.setBorderPainted(false);
+        jb_pesquisa.setContentAreaFilled(false);
+        jb_pesquisa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_pesquisaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jb_pesquisa, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 450, -1, -1));
 
         jSeparator1.setBackground(new java.awt.Color(204, 204, 204));
         jSeparator1.setForeground(new java.awt.Color(204, 204, 204));
@@ -282,11 +288,13 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
 
         jl_fundoamarelo.setBackground(new java.awt.Color(235, 196, 13));
         jl_fundoamarelo.setOpaque(true);
-        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 540, 810, 15));
+        getContentPane().add(jl_fundoamarelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 540, 840, 50));
 
         jl_fundobranco.setBackground(new java.awt.Color(255, 255, 255));
         jl_fundobranco.setOpaque(true);
-        getContentPane().add(jl_fundobranco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 540));
+        getContentPane().add(jl_fundobranco, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 840, 570));
+
+        getAccessibleContext().setAccessibleParent(this);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -302,13 +310,14 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
     private void jb_editarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_editarActionPerformed
         // TODO add your handling code here:
 
-        limparCampos();
         tratarCampos(true);
+        ativarCampos(true);
         jb_novo.setEnabled(false);
         jb_editar.setEnabled(false);
         jb_deletar.setEnabled(false);
         jb_salvar.setEnabled(true);
         jb_cancelar.setEnabled(true);
+        jb_pesquisa.setEnabled(false);
     }//GEN-LAST:event_jb_editarActionPerformed
 
     private void jb_deletarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_deletarActionPerformed
@@ -334,7 +343,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
                         JOptionPane.showMessageDialog(this,
                                 "Salvo com sucesso");
                         jb_cancelarActionPerformed(evt);
-                        
+
                         jb_novo.setEnabled(true);
                         jb_deletar.setEnabled(false);
                         jb_editar.setEnabled(false);
@@ -347,15 +356,12 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Erro ao salvar:"
                     + e.getMessage());
-            
-                        jb_salvar.setEnabled(true);
-                        jb_cancelar.setEnabled(true);
-            
+
+            jb_salvar.setEnabled(true);
+            jb_cancelar.setEnabled(true);
+
         }
 
-       
-        
-      
 
     }//GEN-LAST:event_jb_salvarActionPerformed
 
@@ -400,7 +406,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
 
     private void jb_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_cancelarActionPerformed
         // TODO add your handling code here:
-     
+
         limparCampos();
         ativarCampos(false);
         jb_novo.setEnabled(true);
@@ -410,6 +416,18 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jb_cancelar.setEnabled(false);
     }//GEN-LAST:event_jb_cancelarActionPerformed
 
+    private void jb_pesquisaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_pesquisaActionPerformed
+        // TODO add your handling code here:
+
+        limparCampos();
+        ativarPesquisa(true);
+        jb_novo.setEnabled(false);
+        jb_editar.setEnabled(true);
+        jb_deletar.setEnabled(true);
+        jb_salvar.setEnabled(true);
+        jb_cancelar.setEnabled(true);
+    }//GEN-LAST:event_jb_pesquisaActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JSeparator jSeparator1;
@@ -417,6 +435,7 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
     private javax.swing.JButton jb_deletar;
     private javax.swing.JButton jb_editar;
     private javax.swing.JButton jb_novo;
+    private javax.swing.JButton jb_pesquisa;
     private javax.swing.JButton jb_salvar;
     private javax.swing.JButton jb_voltar;
     private javax.swing.JComboBox jc_revista;
@@ -433,7 +452,6 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jl_telefone;
     private javax.swing.JLabel jl_titulo;
     private javax.swing.JLabel jl_uf;
-    private javax.swing.JLabel jl_voltar;
     private javax.swing.JTextField jt_cidade;
     private javax.swing.JTextField jt_cnpj;
     private javax.swing.JTextField jt_endereco;
@@ -475,6 +493,11 @@ public class InternalFrameTela03 extends javax.swing.JInternalFrame {
         jt_uf.setEnabled(b);
         jt_site.setEnabled(b);
         jc_revista.setEnabled(b);
+
+    }
+
+    private void ativarPesquisa(boolean b) {
+        jt_cnpj.setEnabled(b);
 
     }
 
